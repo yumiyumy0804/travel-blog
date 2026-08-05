@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c9507a"/>
+      <stop offset="100%" stop-color="#1a0a2e"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fce0c8"/>
+      <stop offset="100%" stop-color="#f5c9a8"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a1a08"/>
+      <stop offset="100%" stop-color="#100804"/>
+    </linearGradient>
+    <linearGradient id="suitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d1457"/>
+      <stop offset="100%" stop-color="#1a0a2e"/>
+    </linearGradient>
+    <clipPath id="outerCircle">
+      <circle cx="60" cy="60" r="60"/>
+    </clipPath>
+    <radialGradient id="blush" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f0a0b8" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#f0a0b8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <circle cx="60" cy="60" r="60" fill="url(#bgGrad)"/>
+
+  <!-- 胴体（スーツ） -->
+  <ellipse cx="60" cy="112" rx="38" ry="24" fill="url(#suitGrad)" clip-path="url(#outerCircle)"/>
+  <!-- スーツの細部 -->
+  <path d="M42 95 L60 86 L78 95 L78 120 L42 120 Z" fill="#1a0a2e" clip-path="url(#outerCircle)"/>
+  <!-- ネクタイ（スカーフ） -->
+  <path d="M57 86 L60 100 L63 86 Q60 90 57 86Z" fill="#d4a843" opacity="0.9" clip-path="url(#outerCircle)"/>
+
+  <!-- 首 -->
+  <rect x="54" y="78" width="12" height="14" rx="3" fill="url(#skinGrad)" clip-path="url(#outerCircle)"/>
+
+  <!-- 髪（後ろ・サイド） -->
+  <ellipse cx="60" cy="50" rx="32" ry="33" fill="url(#hairGrad)"/>
+  <!-- 長い髪（左） -->
+  <path d="M32 60 Q24 80 28 100" stroke="#1a0a08" stroke-width="14" fill="none" stroke-linecap="round" clip-path="url(#outerCircle)"/>
+  <!-- 長い髪（右） -->
+  <path d="M88 60 Q96 80 92 100" stroke="#1a0a08" stroke-width="14" fill="none" stroke-linecap="round" clip-path="url(#outerCircle)"/>
+
+  <!-- 顔（肌） -->
+  <ellipse cx="60" cy="56" rx="24" ry="26" fill="url(#skinGrad)"/>
+
+  <!-- 前髪 -->
+  <path d="M36 42 Q38 28 60 26 Q82 28 84 42 Q76 36 60 36 Q44 36 36 42Z" fill="url(#hairGrad)"/>
+  <!-- 前髪の流れ -->
+  <path d="M36 42 Q40 34 48 36" stroke="#1a0a08" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M84 42 Q80 34 72 36" stroke="#1a0a08" stroke-width="2" fill="none" opacity="0.5"/>
+
+  <!-- 眉毛（左） -->
+  <path d="M44 48 Q49 45 54 47" stroke="#3a2010" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- 眉毛（右） -->
+  <path d="M66 47 Q71 45 76 48" stroke="#3a2010" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- 目（左） -->
+  <ellipse cx="49" cy="55" rx="5" ry="5.5" fill="#2a1508"/>
+  <ellipse cx="49" cy="55" rx="3.5" ry="4" fill="#1a0a04"/>
+  <!-- 目の光（左） -->
+  <circle cx="50.5" cy="53" r="1.5" fill="white"/>
+  <circle cx="47.5" cy="56.5" r="0.8" fill="white" opacity="0.6"/>
+
+  <!-- 目（右） -->
+  <ellipse cx="71" cy="55" rx="5" ry="5.5" fill="#2a1508"/>
+  <ellipse cx="71" cy="55" rx="3.5" ry="4" fill="#1a0a04"/>
+  <!-- 目の光（右） -->
+  <circle cx="72.5" cy="53" r="1.5" fill="white"/>
+  <circle cx="69.5" cy="56.5" r="0.8" fill="white" opacity="0.6"/>
+
+  <!-- まつ毛（左） -->
+  <path d="M44 51 Q43 48 44.5 47" stroke="#1a0a04" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M49 50 Q49 47 50 46.5" stroke="#1a0a04" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M54 51 Q55 48 55.5 47.5" stroke="#1a0a04" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <!-- まつ毛（右） -->
+  <path d="M66 51 Q65 48 65.5 47.5" stroke="#1a0a04" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M71 50 Q71 47 72 46.5" stroke="#1a0a04" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <path d="M76 51 Q77 48 76.5 47" stroke="#1a0a04" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+
+  <!-- 鼻 -->
+  <path d="M58 64 Q60 67 62 64" stroke="#e0a88a" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <ellipse cx="57.5" cy="65" rx="1" ry="0.8" fill="#e0a070" opacity="0.5"/>
+  <ellipse cx="62.5" cy="65" rx="1" ry="0.8" fill="#e0a070" opacity="0.5"/>
+
+  <!-- 口 -->
+  <path d="M52 71 Q60 76 68 71" stroke="#c9507a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+  <!-- 下唇のハイライト -->
+  <path d="M56 73.5 Q60 75 64 73.5" stroke="#e8809a" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- 頬のブラッシュ -->
+  <ellipse cx="41" cy="63" rx="7" ry="4.5" fill="url(#blush)"/>
+  <ellipse cx="79" cy="63" rx="7" ry="4.5" fill="url(#blush)"/>
+
+  <!-- イヤリング（ゴールド） -->
+  <circle cx="34" cy="70" r="3.5" fill="#d4a843" opacity="0.9"/>
+  <circle cx="34" cy="70" r="2" fill="#f0dfa0"/>
+  <circle cx="86" cy="70" r="3.5" fill="#d4a843" opacity="0.9"/>
+  <circle cx="86" cy="70" r="2" fill="#f0dfa0"/>
+
+  <!-- 外側のゴールドリング -->
+  <circle cx="60" cy="60" r="58.5" fill="none" stroke="#d4a843" stroke-width="1" opacity="0.4"/>
+</svg>
