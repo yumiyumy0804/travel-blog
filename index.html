@@ -3,13 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>旅するlog</title>
+<title>港区在住外資系キャリアウーマン松子のぶらり世界旅</title>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --c1:#1a1a2e;--c2:#16213e;--acc:#e94560;--acc2:#f5a623;
-  --bg:#fafaf8;--s1:#ffffff;--t1:#1a1a2e;--t2:#5f5e5a;--tm:#aaa;
+  --c1:#1a0a2e;--c2:#2d1457;
+  --acc:#d4a843;--acc2:#e8c97a;--acc3:#f0dfa0;
+  --rose:#c9507a;--roseli:#f7c5d8;
+  --bg:#fdf8f5;--s1:#ffffff;--t1:#1a0a2e;--t2:#6b5c7a;--tm:#b0a0bc;
   --r:10px;
+  --gold:linear-gradient(135deg,#d4a843,#f0dfa0,#d4a843);
 }
 html{scroll-behavior:smooth}
 body{font-family:-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP',sans-serif;background:var(--bg);color:var(--t1);line-height:1.7}
@@ -17,34 +20,38 @@ a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
 
 /* Header */
-header{background:var(--c1);padding:0 1.5rem;position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;height:56px}
-.logo{color:#fff;font-size:20px;font-weight:700;letter-spacing:.05em}
-.logo span{color:var(--acc)}
+header{background:var(--c1);padding:0 1.5rem;position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;height:60px;border-bottom:1px solid rgba(212,168,67,0.3)}
+.logo{color:#fff;font-size:15px;font-weight:700;letter-spacing:.04em;line-height:1.3}
+.logo span{background:var(--gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 nav{display:flex;gap:1.5rem}
-nav a{color:rgba(255,255,255,0.75);font-size:14px;transition:color .2s}
-nav a:hover{color:#fff}
+nav a{color:rgba(255,255,255,0.65);font-size:13px;transition:color .2s;letter-spacing:.04em}
+nav a:hover{color:var(--acc2)}
 
 /* Hero */
-.hero{position:relative;height:480px;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
-.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#1a1a2e 0%,#16213e 40%,#0f3460 100%)}
-.hero-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.3)}
-.hero-content{position:relative;z-index:1;color:#fff;padding:0 1rem}
-.hero-content h1{font-size:clamp(28px,5vw,52px);font-weight:700;line-height:1.2;margin-bottom:1rem}
-.hero-content h1 em{color:var(--acc2);font-style:normal}
-.hero-content p{font-size:16px;opacity:.85;margin-bottom:2rem}
-.hero-search{display:flex;gap:0;max-width:480px;margin:0 auto;border-radius:var(--r);overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,0.3)}
-.hero-search input{flex:1;padding:14px 18px;font-size:15px;border:none;outline:none;font-family:inherit}
-.hero-search button{padding:14px 22px;background:var(--acc);color:#fff;border:none;cursor:pointer;font-size:15px;font-family:inherit;white-space:nowrap;transition:background .2s}
-.hero-search button:hover{background:#c73a52}
+.hero{position:relative;height:520px;overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg,#0d0420 0%,#1a0a2e 30%,#2d1457 60%,#4a1a6b 100%)}
+.hero-sparkle{position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(212,168,67,0.15) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(201,80,122,0.12) 0%,transparent 50%),radial-gradient(circle at 50% 10%,rgba(212,168,67,0.08) 0%,transparent 40%)}
+.hero-overlay{position:absolute;inset:0;background:rgba(10,4,24,0.25)}
+.hero-content{position:relative;z-index:1;color:#fff;padding:0 1.5rem;max-width:680px}
+.hero-eyebrow{font-size:12px;letter-spacing:.2em;color:var(--acc2);margin-bottom:.875rem;opacity:.9;text-transform:uppercase}
+.hero-content h1{font-size:clamp(20px,4vw,36px);font-weight:700;line-height:1.35;margin-bottom:1.125rem;text-shadow:0 2px 20px rgba(0,0,0,0.4)}
+.hero-content h1 em{background:var(--gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:normal}
+.hero-content p{font-size:14px;opacity:.75;margin-bottom:2rem;letter-spacing:.03em}
+.hero-search{display:flex;gap:0;max-width:460px;margin:0 auto;border-radius:30px;overflow:hidden;box-shadow:0 4px 32px rgba(0,0,0,0.35),0 0 0 1px rgba(212,168,67,0.3)}
+.hero-search input{flex:1;padding:14px 20px;font-size:14px;border:none;outline:none;font-family:inherit;background:#fff}
+.hero-search button{padding:14px 24px;background:linear-gradient(135deg,#c9507a,#d4a843);color:#fff;border:none;cursor:pointer;font-size:14px;font-family:inherit;white-space:nowrap;font-weight:600;letter-spacing:.03em}
+
+/* Gold divider */
+.gold-strip{height:3px;background:linear-gradient(90deg,transparent,#d4a843,#f0dfa0,#d4a843,transparent)}
 
 /* Affiliate Banner */
-.aff-strip{background:var(--c2);padding:1rem 1.5rem;display:flex;gap:1rem;overflow-x:auto;scrollbar-width:none}
+.aff-strip{background:var(--c2);padding:1rem 1.5rem;display:flex;gap:1rem;overflow-x:auto;scrollbar-width:none;align-items:center;border-bottom:1px solid rgba(212,168,67,0.2)}
 .aff-strip::-webkit-scrollbar{display:none}
-.aff-btn{flex-shrink:0;padding:10px 20px;border-radius:var(--r);font-size:14px;font-weight:500;cursor:pointer;border:none;transition:opacity .2s;display:inline-flex;align-items:center;gap:8px}
-.aff-btn:hover{opacity:.85}
-.aff-jalan{background:#e8380d;color:#fff}
-.aff-expedia{background:#ffc72c;color:#00355f}
-.aff-label{color:rgba(255,255,255,0.5);font-size:13px;display:flex;align-items:center;padding:0 8px}
+.aff-btn{flex-shrink:0;padding:10px 20px;border-radius:30px;font-size:13px;font-weight:600;cursor:pointer;border:none;transition:opacity .2s,transform .15s;display:inline-flex;align-items:center;gap:8px;letter-spacing:.03em}
+.aff-btn:hover{opacity:.88;transform:translateY(-1px)}
+.aff-ikyu{background:linear-gradient(135deg,#6b1a2a,#9b2335);color:#fff;box-shadow:0 2px 12px rgba(107,26,42,0.4)}
+.aff-expedia{background:linear-gradient(135deg,#ffc72c,#ffdd66);color:#00355f;box-shadow:0 2px 12px rgba(255,199,44,0.35)}
+.aff-label{color:rgba(255,255,255,0.45);font-size:12px;display:flex;align-items:center;padding:0 8px;letter-spacing:.08em;white-space:nowrap}
 
 /* Main Layout */
 .container{max-width:1100px;margin:0 auto;padding:0 1.5rem}
@@ -52,121 +59,138 @@ nav a:hover{color:#fff}
 @media(max-width:768px){.layout{grid-template-columns:1fr}.sidebar{display:none}}
 
 /* Section heading */
-.sec-head{display:flex;align-items:center;gap:12px;margin-bottom:1.5rem}
-.sec-head h2{font-size:20px;font-weight:600}
-.sec-head::after{content:"";flex:1;height:1px;background:rgba(0,0,0,0.1)}
+.sec-head{display:flex;align-items:center;gap:14px;margin-bottom:1.5rem}
+.sec-head h2{font-size:18px;font-weight:700;letter-spacing:.04em;white-space:nowrap}
+.sec-head h2::before{content:"";display:inline-block;width:4px;height:18px;background:linear-gradient(to bottom,#d4a843,#c9507a);border-radius:2px;margin-right:10px;vertical-align:-3px}
+.sec-head::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,rgba(212,168,67,0.4),transparent)}
 
 /* Article Cards */
 .cards-featured{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:2.5rem}
 @media(max-width:600px){.cards-featured{grid-template-columns:1fr}}
-.card{border-radius:12px;overflow:hidden;background:var(--s1);border:0.5px solid rgba(0,0,0,0.08);transition:transform .2s,box-shadow .2s;cursor:pointer}
-.card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,0.1)}
-.card-img{height:200px;background:linear-gradient(135deg,#667eea,#764ba2);position:relative;display:flex;align-items:flex-end;padding:1rem}
-.card-img.g2{background:linear-gradient(135deg,#f093fb,#f5576c)}
-.card-img.g3{background:linear-gradient(135deg,#4facfe,#00f2fe)}
-.card-img.g4{background:linear-gradient(135deg,#43e97b,#38f9d7)}
-.card-img.g5{background:linear-gradient(135deg,#fa709a,#fee140)}
-.card-tag{display:inline-block;background:rgba(255,255,255,0.2);backdrop-filter:blur(8px);color:#fff;font-size:11px;padding:3px 10px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.3)}
-.card-body{padding:1rem 1.125rem 1.25rem}
-.card-body h3{font-size:16px;font-weight:600;line-height:1.45;margin-bottom:.5rem}
-.card-meta{font-size:12px;color:var(--tm);display:flex;gap:12px}
-.card-excerpt{font-size:13px;color:var(--t2);margin-top:.5rem;line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card{border-radius:14px;overflow:hidden;background:var(--s1);border:0.5px solid rgba(212,168,67,0.2);transition:transform .2s,box-shadow .2s;cursor:pointer}
+.card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(26,10,46,0.12)}
+.card-img{height:200px;position:relative;display:flex;align-items:flex-end;padding:1rem}
+.card-img.g1{background:linear-gradient(135deg,#1a0a2e,#4a1a6b,#c9507a)}
+.card-img.g2{background:linear-gradient(135deg,#0d2137,#1a4a6b,#d4a843)}
+.card-img.g3{background:linear-gradient(135deg,#0f2b1a,#1a5c3a,#4fc97a)}
+.card-img.g4{background:linear-gradient(135deg,#2d1400,#7a3800,#d4a843)}
+.card-img.g5{background:linear-gradient(135deg,#1a0a2e,#4a1a6b,#7b2d8b)}
+.card-tag{display:inline-block;background:rgba(255,255,255,0.18);backdrop-filter:blur(8px);color:#fff;font-size:11px;padding:4px 12px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.3);letter-spacing:.05em}
+.card-body{padding:1.125rem 1.25rem 1.375rem}
+.card-body h3{font-size:15px;font-weight:700;line-height:1.5;margin-bottom:.5rem;color:var(--t1)}
+.card-meta{font-size:11px;color:var(--tm);display:flex;gap:12px;letter-spacing:.03em}
+.card-excerpt{font-size:13px;color:var(--t2);margin-top:.5rem;line-height:1.65;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+
+/* Matsuko Profile */
+.profile-banner{background:linear-gradient(135deg,var(--c1),var(--c2));border-radius:16px;padding:1.5rem;display:flex;gap:1.25rem;align-items:center;margin-bottom:2rem;border:1px solid rgba(212,168,67,0.25);box-shadow:0 4px 24px rgba(26,10,46,0.12)}
+.profile-avatar{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,#c9507a,#d4a843);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:28px;border:2px solid rgba(212,168,67,0.5)}
+.profile-text{color:#fff}
+.profile-text h3{font-size:16px;font-weight:700;margin-bottom:.25rem;background:var(--gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.profile-text p{font-size:13px;opacity:.75;line-height:1.6}
 
 /* Affiliate Card */
-.aff-card{border-radius:12px;overflow:hidden;background:var(--s1);border:0.5px solid rgba(0,0,0,0.08);margin-bottom:1.25rem}
-.aff-card-body{padding:1.125rem}
-.aff-card-body h3{font-size:15px;font-weight:600;margin-bottom:.375rem}
+.aff-card{border-radius:14px;overflow:hidden;background:var(--s1);border:0.5px solid rgba(212,168,67,0.25);margin-bottom:1.25rem;box-shadow:0 2px 12px rgba(26,10,46,0.06)}
+.aff-card-head{padding:.875rem 1.25rem;background:linear-gradient(135deg,var(--c1),var(--c2));display:flex;align-items:center;gap:8px}
+.aff-card-head span{color:var(--acc2);font-size:13px;font-weight:600;letter-spacing:.04em}
+.aff-card-body{padding:1.125rem 1.25rem}
 .aff-card-body p{font-size:13px;color:var(--t2);margin-bottom:1rem;line-height:1.6}
-.aff-card-footer{padding:.75rem 1.125rem;background:rgba(0,0,0,0.02);border-top:0.5px solid rgba(0,0,0,0.06);display:flex;gap:8px}
-.btn-aff{display:inline-block;padding:9px 16px;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer;transition:opacity .2s}
-.btn-aff:hover{opacity:.85}
-.btn-jalan{background:#e8380d;color:#fff}
-.btn-expedia{background:#00355f;color:#fff}
-.placeholder-note{font-size:11px;color:var(--tm);margin-top:4px}
+.btn-aff{display:inline-block;padding:10px 20px;border-radius:30px;font-size:13px;font-weight:600;cursor:pointer;transition:opacity .2s,transform .15s;letter-spacing:.03em}
+.btn-aff:hover{opacity:.85;transform:translateY(-1px)}
+.btn-ikyu{background:linear-gradient(135deg,#6b1a2a,#9b2335);color:#fff;box-shadow:0 3px 14px rgba(107,26,42,0.35)}
+.btn-expedia{background:linear-gradient(135deg,#00355f,#0057a0);color:#fff;box-shadow:0 3px 14px rgba(0,53,95,0.25)}
+.placeholder-note{font-size:11px;color:var(--tm);margin-top:6px}
 
 /* Articles list */
-.articles-list{display:flex;flex-direction:column;gap:1.25rem}
-.article-row{display:flex;gap:1rem;background:var(--s1);border-radius:12px;overflow:hidden;border:0.5px solid rgba(0,0,0,0.08);transition:box-shadow .2s;cursor:pointer}
-.article-row:hover{box-shadow:0 4px 20px rgba(0,0,0,0.08)}
-.article-row-img{width:120px;flex-shrink:0;background:linear-gradient(135deg,#a18cd1,#fbc2eb)}
-.article-row-img.g2{background:linear-gradient(135deg,#ffecd2,#fcb69f)}
-.article-row-img.g3{background:linear-gradient(135deg,#a1c4fd,#c2e9fb)}
-.article-row-body{padding:.875rem 1rem .875rem 0;flex:1}
-.article-row-body h3{font-size:14px;font-weight:600;line-height:1.45;margin-bottom:.375rem}
+.articles-list{display:flex;flex-direction:column;gap:1.125rem}
+.article-row{display:flex;gap:0;background:var(--s1);border-radius:14px;overflow:hidden;border:0.5px solid rgba(212,168,67,0.18);transition:box-shadow .2s,transform .2s;cursor:pointer}
+.article-row:hover{box-shadow:0 6px 24px rgba(26,10,46,0.1);transform:translateY(-2px)}
+.article-row-img{width:110px;flex-shrink:0}
+.article-row-img.g1{background:linear-gradient(160deg,#1a0a2e,#c9507a)}
+.article-row-img.g2{background:linear-gradient(160deg,#0d2137,#d4a843)}
+.article-row-img.g3{background:linear-gradient(160deg,#0f2b1a,#4fc97a)}
+.article-row-body{padding:.875rem 1.125rem;flex:1}
+.article-row-body h3{font-size:14px;font-weight:700;line-height:1.5;margin-bottom:.375rem;color:var(--t1)}
 .article-row-body p{font-size:12px;color:var(--t2);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.article-row-meta{font-size:11px;color:var(--tm);margin-top:.5rem;display:flex;gap:8px}
+.article-row-meta{font-size:11px;color:var(--tm);margin-top:.5rem;display:flex;gap:10px}
 
 /* Sidebar */
-.sidebar{}
-.widget{background:var(--s1);border-radius:12px;border:0.5px solid rgba(0,0,0,0.08);overflow:hidden;margin-bottom:1.5rem}
-.widget-head{padding:.875rem 1.125rem;background:var(--c1);color:#fff;font-size:14px;font-weight:600}
+.widget{background:var(--s1);border-radius:14px;border:0.5px solid rgba(212,168,67,0.2);overflow:hidden;margin-bottom:1.5rem;box-shadow:0 2px 12px rgba(26,10,46,0.05)}
+.widget-head{padding:.875rem 1.125rem;background:linear-gradient(135deg,var(--c1),var(--c2));color:var(--acc2);font-size:13px;font-weight:700;letter-spacing:.05em}
 .widget-body{padding:1.125rem}
 .dest-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.dest-chip{border-radius:8px;padding:.5rem;text-align:center;font-size:12px;font-weight:500;cursor:pointer;transition:opacity .2s}
-.dest-chip:hover{opacity:.8}
-.dest-domestic{background:#fff3e0;color:#e65100}
-.dest-intl{background:#e3f2fd;color:#0277bd}
-.ranking-list{display:flex;flex-direction:column;gap:.75rem}
+.dest-chip{border-radius:8px;padding:.5rem;text-align:center;font-size:12px;font-weight:600;cursor:pointer;transition:opacity .2s,transform .15s;letter-spacing:.03em}
+.dest-chip:hover{opacity:.8;transform:scale(1.03)}
+.dest-domestic{background:linear-gradient(135deg,#fdf0f5,#fce4ee);color:#c9507a;border:0.5px solid rgba(201,80,122,0.2)}
+.dest-intl{background:linear-gradient(135deg,#f5f0fd,#ede4fc);color:#7b2d8b;border:0.5px solid rgba(123,45,139,0.2)}
+.ranking-list{display:flex;flex-direction:column;gap:.875rem}
 .rank-item{display:flex;align-items:flex-start;gap:.75rem}
-.rank-num{width:24px;height:24px;border-radius:50%;background:var(--acc);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
-.rank-num.n2{background:var(--t2)}
-.rank-num.n3{background:var(--acc2)}
+.rank-num{width:26px;height:26px;border-radius:50%;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.rank-num.n1{background:linear-gradient(135deg,#d4a843,#f0dfa0);color:#5a3c00}
+.rank-num.n2{background:linear-gradient(135deg,#b0b0b8,#d8d8e0);color:#3a3a4a}
+.rank-num.n3{background:linear-gradient(135deg,#c97a4a,#e8a87a);color:#4a2000}
 .rank-text{font-size:13px;line-height:1.5;color:var(--t1)}
-.rank-text span{font-size:11px;color:var(--tm);display:block}
+.rank-text span{font-size:11px;color:var(--tm);display:block;margin-top:1px}
 
 /* Destination Section */
-.dest-section{padding:2.5rem 0;border-top:1px solid rgba(0,0,0,0.06)}
+.dest-section{padding:2.5rem 0;border-top:1px solid rgba(212,168,67,0.2)}
 .dest-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
-.dest-card{position:relative;border-radius:12px;overflow:hidden;aspect-ratio:4/3;cursor:pointer;transition:transform .2s}
-.dest-card:hover{transform:scale(1.02)}
+.dest-card{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3;cursor:pointer;transition:transform .2s,box-shadow .2s}
+.dest-card:hover{transform:scale(1.03);box-shadow:0 12px 32px rgba(26,10,46,0.2)}
 .dest-card-bg{position:absolute;inset:0}
-.dest-card-bg.d1{background:linear-gradient(160deg,#0f2027,#203a43,#2c5364)}
-.dest-card-bg.d2{background:linear-gradient(160deg,#642b73,#c6426e)}
-.dest-card-bg.d3{background:linear-gradient(160deg,#1a1a2e,#16213e,#0f3460)}
-.dest-card-bg.d4{background:linear-gradient(160deg,#134e5e,#71b280)}
-.dest-card-bg.d5{background:linear-gradient(160deg,#c94b4b,#4b134f)}
-.dest-card-bg.d6{background:linear-gradient(160deg,#373b44,#4286f4)}
-.dest-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.7) 0%,transparent 60%)}
-.dest-label{position:absolute;bottom:0;left:0;right:0;padding:1rem;color:#fff}
-.dest-label strong{font-size:16px;display:block}
-.dest-label span{font-size:12px;opacity:.8}
+.dest-card-bg.d1{background:linear-gradient(160deg,#0d0420,#1a0a2e,#4a1a6b)}
+.dest-card-bg.d2{background:linear-gradient(160deg,#2d1400,#7a3800,#c9507a)}
+.dest-card-bg.d3{background:linear-gradient(160deg,#0d1f3c,#1a4060,#d4a843)}
+.dest-card-bg.d4{background:linear-gradient(160deg,#0f1f0f,#1a4a2a,#4fc97a)}
+.dest-card-bg.d5{background:linear-gradient(160deg,#1a0820,#3d1060,#c9507a)}
+.dest-card-bg.d6{background:linear-gradient(160deg,#1a0a0a,#4a1a1a,#d4a843)}
+.dest-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,0.75) 0%,transparent 60%)}
+.dest-label{position:absolute;bottom:0;left:0;right:0;padding:1.125rem}
+.dest-label strong{font-size:17px;display:block;color:#fff;font-weight:700;text-shadow:0 1px 8px rgba(0,0,0,0.5)}
+.dest-label span{font-size:12px;color:var(--acc3);letter-spacing:.04em}
+.dest-badge{position:absolute;top:10px;right:10px;background:rgba(212,168,67,0.25);backdrop-filter:blur(6px);border:0.5px solid rgba(212,168,67,0.4);color:var(--acc3);font-size:10px;padding:3px 9px;border-radius:20px;letter-spacing:.05em}
+
+/* Disclaimer */
+.aff-disclaimer{background:linear-gradient(135deg,#fdf5e8,#fdf0f5);border:0.5px solid rgba(212,168,67,0.3);border-radius:10px;padding:.875rem 1.125rem;font-size:12px;color:var(--t2);margin-top:2rem;line-height:1.7}
 
 /* Footer */
-footer{background:var(--c1);color:rgba(255,255,255,0.6);text-align:center;padding:2rem 1rem;font-size:13px;margin-top:3rem}
-footer a{color:rgba(255,255,255,0.5)}
-.aff-disclaimer{background:#fffbea;border:0.5px solid #f5a623;border-radius:8px;padding:.75rem 1rem;font-size:12px;color:#7a5a00;margin-top:2rem}
+footer{background:var(--c1);border-top:1px solid rgba(212,168,67,0.2);color:rgba(255,255,255,0.5);text-align:center;padding:2.5rem 1rem;font-size:13px;margin-top:3rem}
+.footer-title{font-size:16px;font-weight:700;margin-bottom:.375rem;background:var(--gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+footer a{color:rgba(255,255,255,0.4)}
+footer a:hover{color:var(--acc2)}
 </style>
 </head>
 <body>
 
 <header>
-  <div class="logo">旅する<span>log</span></div>
+  <div class="logo">港区在住外資系キャリアウーマン<span>松子</span>のぶらり世界旅</div>
   <nav>
     <a href="#">国内</a>
     <a href="#">海外</a>
     <a href="#">ホテル</a>
-    <a href="#">Tips</a>
+    <a href="#">グルメ</a>
   </nav>
 </header>
 
 <section class="hero">
   <div class="hero-bg"></div>
+  <div class="hero-sparkle"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <h1>世界中の<em>旅</em>を、<br>あなたの手に</h1>
-    <p>国内・海外の旅行情報、ホテル・格安航空券のまとめ</p>
+    <p class="hero-eyebrow">Matsuko's World Travel Diary</p>
+    <h1>港区から世界へ、<br><em>松子</em>がぶらり旅してきた</h1>
+    <p>外資系OLが本音で語る、リアルな旅行記とホテル・航空券のお得情報</p>
     <div class="hero-search">
-      <input type="text" placeholder="行き先・ホテル名で検索...">
-      <button>検索</button>
+      <input type="text" placeholder="旅行先・ホテル・グルメを検索...">
+      <button>✦ 検索</button>
     </div>
   </div>
 </section>
 
+<div class="gold-strip"></div>
+
 <div class="aff-strip">
-  <span class="aff-label">予約する ▶</span>
-  <!-- じゃらん アフィリエイトリンクをここに差し替え -->
-  <a href="#" class="aff-btn aff-jalan">🏯 じゃらんで宿を探す</a>
-  <!-- Expedia アフィリエイトリンクをここに差し替え -->
+  <span class="aff-label">✦ 予約はこちら</span>
+  <a href="#" class="aff-btn aff-ikyu">🏨 一休で宿を探す</a>
   <a href="#" class="aff-btn aff-expedia">✈️ Expediaでホテル・航空券</a>
 </div>
 
@@ -174,125 +198,134 @@ footer a{color:rgba(255,255,255,0.5)}
   <div class="layout">
     <main>
 
+      <!-- プロフィール -->
+      <div class="profile-banner">
+        <div class="profile-avatar">👩‍💼</div>
+        <div class="profile-text">
+          <h3>松子（Matsuko）</h3>
+          <p>港区在住の外資系キャリアウーマン。年10回以上の海外旅行経験あり。ビジネスクラスからバックパックまで、旅のスタイルを問わず世界をぶらり。</p>
+        </div>
+      </div>
+
       <!-- 注目記事 -->
-      <div class="sec-head"><h2>注目の旅行記</h2></div>
+      <div class="sec-head"><h2>松子のおすすめ旅行記</h2></div>
       <div class="cards-featured">
         <div class="card">
-          <div class="card-img">
-            <span class="card-tag">国内 / 京都</span>
-          </div>
+          <div class="card-img g1"><span class="card-tag">海外 / パリ</span></div>
           <div class="card-body">
-            <h3>秋の京都、紅葉が最高すぎた3泊4日の旅</h3>
+            <h3>パリ5日間、外資系OLが泊まった本音ホテルレビュー</h3>
+            <div class="card-meta"><span>2025年10月</span><span>📍 フランス</span></div>
+            <p class="card-excerpt">マレ地区のブティックホテルからシャンゼリゼ近くの5つ星まで。Expedia経由で予約したリアルな評価を公開。</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img g2"><span class="card-tag">国内 / 京都</span></div>
+          <div class="card-body">
+            <h3>秋の京都、紅葉シーズンに泊まった料亭旅館の全貌</h3>
             <div class="card-meta"><span>2025年11月</span><span>📍 京都</span></div>
-            <p class="card-excerpt">嵐山から始まり、哲学の道、東福寺まで歩き尽くした紅葉ベストシーズンの旅。おすすめの宿と穴場スポットを全公開。</p>
+            <p class="card-excerpt">一休で予約した名旅館で過ごす大人の京都旅。アクセス・お部屋・夕食まで全部レポート。</p>
           </div>
         </div>
         <div class="card">
-          <div class="card-img g2">
-            <span class="card-tag">海外 / バリ島</span>
-          </div>
+          <div class="card-img g3"><span class="card-tag">海外 / バリ島</span></div>
           <div class="card-body">
-            <h3>バリ島5日間、1人旅でも安心できたホテル3選</h3>
+            <h3>バリ島ウブド、女一人旅でも最高に癒された5日間</h3>
             <div class="card-meta"><span>2025年8月</span><span>📍 インドネシア</span></div>
-            <p class="card-excerpt">ウブド・クタ・スミニャックを巡った1人旅。Expedia経由で予約した3つのリゾートを正直レビュー。</p>
+            <p class="card-excerpt">スパ・ヨガ・棚田トレッキング。外資系の疲れを全部リセットしてきた松子の本音レポート。</p>
           </div>
         </div>
         <div class="card">
-          <div class="card-img g3">
-            <span class="card-tag">国内 / 北海道</span>
-          </div>
+          <div class="card-img g4"><span class="card-tag">海外 / ドバイ</span></div>
           <div class="card-body">
-            <h3>冬の北海道、雪まつりと温泉を満喫する旅</h3>
-            <div class="card-meta"><span>2025年2月</span><span>📍 北海道</span></div>
-            <p class="card-excerpt">さっぽろ雪まつりからニセコのパウダースノーまで。じゃらんで予約した温泉宿も要チェック。</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-img g4">
-            <span class="card-tag">海外 / ハワイ</span>
-          </div>
-          <div class="card-body">
-            <h3>ハワイ・マウイ島で過ごす贅沢7日間の全記録</h3>
-            <div class="card-meta"><span>2025年6月</span><span>📍 アメリカ</span></div>
-            <p class="card-excerpt">ビーチ・グルメ・アクティビティを詰め込んだマウイ旅行。ホテル比較とフライト予約のコツも。</p>
+            <h3>ドバイ3泊、憧れのバージュ・アル・アラブに泊まってみた</h3>
+            <div class="card-meta"><span>2025年6月</span><span>📍 UAE</span></div>
+            <p class="card-excerpt">航空券＋ホテルをExpedidaでパッケージ予約。実際の宿泊コスト・体験を全部お見せします。</p>
           </div>
         </div>
       </div>
 
-      <!-- アフィリエイト差し込みカード -->
+      <!-- アフィリエイトカード（一休） -->
       <div class="aff-card">
+        <div class="aff-card-head"><span>🏨 一休.comで高級ホテル・旅館を予約</span></div>
         <div class="aff-card-body">
-          <h3>🏯 国内旅行の宿はじゃらんがお得</h3>
-          <p>温泉・旅館・ビジネスホテルまで日本全国の宿を比較。ポイントも貯まる。</p>
-          <!-- アフィリエイト登録後、hrefを差し替えてください -->
-          <a href="#" class="btn-aff btn-jalan">じゃらんで宿を探す →</a>
+          <p>松子が実際に使っている一休.com。高級ホテル・旅館・料亭まで、特別な旅に最高の宿を。会員限定の直前割引もお見逃しなく。</p>
+          <a href="#" class="btn-aff btn-ikyu">一休で宿を探す →</a>
           <p class="placeholder-note">※ アフィリエイトリンク登録後に差し替え予定</p>
         </div>
       </div>
 
       <!-- 最新記事 -->
-      <div class="sec-head" style="margin-top:2rem"><h2>最新記事</h2></div>
+      <div class="sec-head" style="margin-top:2rem"><h2>最新の旅行記</h2></div>
       <div class="articles-list">
         <div class="article-row">
-          <div class="article-row-img"></div>
+          <div class="article-row-img g1"></div>
           <div class="article-row-body">
-            <h3>沖縄・石垣島でシュノーケリングを楽しむ完全ガイド</h3>
-            <p>透明度抜群の海でサンゴと熱帯魚に囲まれる体験。おすすめポイントと予約方法まとめ。</p>
-            <div class="article-row-meta"><span>2026年1月</span><span>📍 石垣島</span></div>
+            <h3>台湾2泊3日弾丸旅行、グルメ三昧の全行程を公開</h3>
+            <p>小籠包・牛肉麺・夜市グルメを食べ尽くす弾丸旅。格安フライトの探し方も全部教えます。</p>
+            <div class="article-row-meta"><span>2026年1月</span><span>📍 台湾</span></div>
           </div>
         </div>
         <div class="article-row">
           <div class="article-row-img g2"></div>
           <div class="article-row-body">
-            <h3>台湾2泊3日弾丸旅行、グルメと観光を全制覇</h3>
-            <p>小籠包・牛肉麺・夜市グルメを食べ尽くす旅程。格安フライトの探し方も公開。</p>
-            <div class="article-row-meta"><span>2025年12月</span><span>📍 台湾</span></div>
+            <h3>箱根1泊、外資系OLが選ぶ最高の温泉宿TOP5【2026年版】</h3>
+            <p>一休のクチコミと松子の実体験を掛け合わせた本音ランキング。露天風呂・夕食・コスパを徹底比較。</p>
+            <div class="article-row-meta"><span>2026年1月</span><span>📍 箱根</span></div>
           </div>
         </div>
         <div class="article-row">
           <div class="article-row-img g3"></div>
           <div class="article-row-body">
-            <h3>箱根1泊、おすすめ温泉宿ランキングTOP5【2026年版】</h3>
-            <p>露天風呂・料理・コスパを総合評価。じゃらん予約で特典がつく宿もご紹介。</p>
-            <div class="article-row-meta"><span>2026年1月</span><span>📍 箱根</span></div>
+            <h3>ニューヨーク出張ついでに観光、おすすめスポット10選</h3>
+            <p>外資系あるあるのNY出張。空き時間を最大活用した松子流の観光コースを大公開。</p>
+            <div class="article-row-meta"><span>2025年12月</span><span>📍 アメリカ</span></div>
           </div>
         </div>
       </div>
 
+      <!-- アフィリエイトカード（Expedia） -->
+      <div class="aff-card" style="margin-top:1.5rem">
+        <div class="aff-card-head"><span>✈️ Expediaで海外航空券＋ホテルをパッケージ予約</span></div>
+        <div class="aff-card-body">
+          <p>松子の海外旅行はほぼExpedia。フライト＋ホテルのセット予約で割引が効くのが最高。</p>
+          <a href="#" class="btn-aff btn-expedia">Expediaで検索する →</a>
+          <p class="placeholder-note">※ アフィリエイトリンク登録後に差し替え予定</p>
+        </div>
+      </div>
+
       <div class="aff-disclaimer">
-        ⚠️ 本サイトは各社アフィリエイトプログラムに参加しており、リンク経由での購入・予約により報酬を受け取る場合があります。
+        ⚠️ 本サイトは一休.com・Expediaほか各社アフィリエイトプログラムに参加しており、リンク経由での予約により報酬を受け取る場合があります。記事内の情報は執筆時点のものです。
       </div>
     </main>
 
     <!-- Sidebar -->
     <aside class="sidebar">
       <div class="widget">
-        <div class="widget-head">🔥 人気記事ランキング</div>
+        <div class="widget-head">👑 松子的人気記事ランキング</div>
         <div class="widget-body">
           <div class="ranking-list">
             <div class="rank-item">
-              <div class="rank-num">1</div>
-              <div class="rank-text">秋の京都、紅葉が最高すぎた3泊4日<span>京都 · 2025年11月</span></div>
+              <div class="rank-num n1">1</div>
+              <div class="rank-text">パリ5日間、外資系OLの本音ホテルレビュー<span>パリ · 2025年10月</span></div>
             </div>
             <div class="rank-item">
               <div class="rank-num n2">2</div>
-              <div class="rank-text">バリ島5日間、1人旅でも安心のホテル3選<span>バリ島 · 2025年8月</span></div>
+              <div class="rank-text">ドバイ、バージュ・アル・アラブに泊まってみた<span>ドバイ · 2025年6月</span></div>
             </div>
             <div class="rank-item">
               <div class="rank-num n3">3</div>
-              <div class="rank-text">箱根1泊おすすめ温泉宿ランキング2026<span>箱根 · 2026年1月</span></div>
+              <div class="rank-text">箱根1泊、外資系OLが選ぶ温泉宿TOP5<span>箱根 · 2026年1月</span></div>
             </div>
           </div>
         </div>
       </div>
 
       <div class="widget">
-        <div class="widget-head">✈️ Expediaで航空券・ホテルを探す</div>
+        <div class="widget-head">✈️ Expediaで海外旅行を予約</div>
         <div class="widget-body">
-          <p style="font-size:13px;color:var(--t2);margin-bottom:1rem;line-height:1.6">海外ホテル＋航空券のパッケージ予約ならExpedidaがお得。</p>
-          <!-- アフィリエイト登録後にhrefを差し替えてください -->
+          <p style="font-size:13px;color:var(--t2);margin-bottom:1rem;line-height:1.6">松子愛用。航空券＋ホテルのパッケージ予約で断然お得。</p>
           <a href="#" class="btn-aff btn-expedia" style="display:block;text-align:center;padding:12px">Expediaで検索する →</a>
-          <p class="placeholder-note" style="margin-top:6px">※ アフィリエイトリンク登録後に差し替え予定</p>
+          <p class="placeholder-note" style="margin-top:6px;text-align:center">※ アフィリエイトリンク登録後に差し替え予定</p>
         </div>
       </div>
 
@@ -304,10 +337,10 @@ footer a{color:rgba(255,255,255,0.5)}
             <div class="dest-chip dest-domestic">京都</div>
             <div class="dest-chip dest-domestic">沖縄</div>
             <div class="dest-chip dest-domestic">箱根</div>
-            <div class="dest-chip dest-intl">ハワイ</div>
+            <div class="dest-chip dest-intl">パリ</div>
+            <div class="dest-chip dest-intl">ドバイ</div>
             <div class="dest-chip dest-intl">バリ島</div>
-            <div class="dest-chip dest-intl">台湾</div>
-            <div class="dest-chip dest-intl">ヨーロッパ</div>
+            <div class="dest-chip dest-intl">ニューヨーク</div>
           </div>
         </div>
       </div>
@@ -316,46 +349,47 @@ footer a{color:rgba(255,255,255,0.5)}
 
   <!-- 目的地セクション -->
   <div class="dest-section">
-    <div class="sec-head"><h2>人気の旅行先</h2></div>
+    <div class="sec-head"><h2>松子が行った旅行先</h2></div>
     <div class="dest-cards">
       <div class="dest-card">
         <div class="dest-card-bg d1"></div>
         <div class="dest-overlay"></div>
-        <div class="dest-label"><strong>北海道</strong><span>雪景色・グルメ・温泉</span></div>
+        <span class="dest-badge">人気No.1</span>
+        <div class="dest-label"><strong>パリ</strong><span>フランス / ヨーロッパ</span></div>
       </div>
       <div class="dest-card">
         <div class="dest-card-bg d2"></div>
         <div class="dest-overlay"></div>
-        <div class="dest-label"><strong>京都・大阪</strong><span>歴史・食文化・祭り</span></div>
+        <div class="dest-label"><strong>京都・大阪</strong><span>国内 / 関西</span></div>
       </div>
       <div class="dest-card">
         <div class="dest-card-bg d3"></div>
         <div class="dest-overlay"></div>
-        <div class="dest-label"><strong>ハワイ</strong><span>ビーチ・リゾート・グルメ</span></div>
+        <div class="dest-label"><strong>ドバイ</strong><span>UAE / 中東</span></div>
       </div>
       <div class="dest-card">
         <div class="dest-card-bg d4"></div>
         <div class="dest-overlay"></div>
-        <div class="dest-label"><strong>バリ島</strong><span>ウブド・スミニャック</span></div>
+        <div class="dest-label"><strong>バリ島</strong><span>インドネシア / アジア</span></div>
       </div>
       <div class="dest-card">
         <div class="dest-card-bg d5"></div>
         <div class="dest-overlay"></div>
-        <div class="dest-label"><strong>沖縄</strong><span>海・サンゴ・離島</span></div>
+        <div class="dest-label"><strong>ニューヨーク</strong><span>アメリカ / 北米</span></div>
       </div>
       <div class="dest-card">
         <div class="dest-card-bg d6"></div>
         <div class="dest-overlay"></div>
-        <div class="dest-label"><strong>ヨーロッパ</strong><span>パリ・ローマ・バルセロナ</span></div>
+        <div class="dest-label"><strong>台湾</strong><span>アジア / グルメ旅</span></div>
       </div>
     </div>
   </div>
 </div>
 
 <footer>
-  <p style="margin-bottom:.5rem;color:rgba(255,255,255,0.8);font-size:15px;font-weight:500">旅するlog</p>
-  <p>国内・海外の旅行情報をお届けするブログ</p>
-  <p style="margin-top:1rem;font-size:11px">© 2026 旅するlog · <a href="#">プライバシーポリシー</a> · <a href="#">お問い合わせ</a></p>
+  <p class="footer-title">港区在住外資系キャリアウーマン松子のぶらり世界旅</p>
+  <p>国内・海外の旅行記とお得な予約情報をお届け</p>
+  <p style="margin-top:1rem;font-size:11px"><a href="#">プライバシーポリシー</a> · <a href="#">お問い合わせ</a> · <a href="#">松子について</a></p>
 </footer>
 
 </body>
