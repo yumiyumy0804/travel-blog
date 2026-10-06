@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中禅寺湖スイートに泊まってきた！日光・湖畔の絶景ホテル体験記 | 松子のぶらり世界旅</title>
+<link rel="icon" type="image/svg+xml" href="matsuko-icon.svg">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --c1:#1a0a2e;--c2:#2d1457;
+  --acc:#d4a843;--acc2:#e8c97a;--acc3:#f0dfa0;
+  --rose:#c9507a;--roseli:#f7c5d8;
+  --bg:#fdf8f5;--s1:#ffffff;--t1:#1a0a2e;--t2:#6b5c7a;--tm:#b0a0bc;
+  --r:10px;
+  --gold:linear-gradient(135deg,#d4a843,#f0dfa0,#d4a843);
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP',sans-serif;background:var(--bg);color:var(--t1);line-height:1.7}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+header{background:var(--c1);padding:0 1.5rem;position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;height:60px;border-bottom:1px solid rgba(212,168,67,0.3)}
+.logo{color:#fff;font-size:15px;font-weight:700;letter-spacing:.04em;line-height:1.3}
+.logo span{background:var(--gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+nav a{color:rgba(255,255,255,0.65);font-size:13px;transition:color .2s;letter-spacing:.04em;margin-left:1.5rem}
+nav a:hover{color:var(--acc2)}
+
+.gold-strip{height:3px;background:linear-gradient(90deg,transparent,#d4a843,#f0dfa0,#d4a843,transparent)}
+
+.article-hero{position:relative;height:440px;overflow:hidden;display:flex;align-items:flex-end;padding:2.5rem}
+.article-hero-bg{position:absolute;inset:0;background:linear-gradient(160deg,#0d1f3c 0%,#1a3a5c 40%,#2d6a8a 70%,#4a9ab0 100%)}
+.article-hero-sparkle{position:absolute;inset:0;background-image:radial-gradient(circle at 30% 60%,rgba(212,168,67,0.2) 0%,transparent 50%),radial-gradient(circle at 80% 20%,rgba(201,80,122,0.1) 0%,transparent 40%)}
+.article-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,4,24,0.85) 0%,rgba(10,4,24,0.2) 70%,transparent 100%)}
+.article-hero-content{position:relative;z-index:1;max-width:800px}
+.article-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(212,168,67,0.2);border:0.5px solid rgba(212,168,67,0.4);color:var(--acc2);font-size:12px;padding:5px 14px;border-radius:20px;margin-bottom:1rem;letter-spacing:.08em}
+.article-hero-content h1{font-size:clamp(22px,4vw,38px);font-weight:700;color:#fff;line-height:1.4;margin-bottom:1rem;text-shadow:0 2px 20px rgba(0,0,0,0.5)}
+.article-hero-content h1 em{background:var(--gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:normal}
+.article-meta{display:flex;gap:1.25rem;color:rgba(255,255,255,0.6);font-size:13px}
+
+.container{max-width:960px;margin:0 auto;padding:0 1.5rem}
+.article-layout{display:grid;grid-template-columns:1fr 280px;gap:2.5rem;padding:2.5rem 0}
+@media(max-width:768px){.article-layout{grid-template-columns:1fr}.article-sidebar{display:none}}
+
+.article-body{font-size:15px;line-height:1.9;color:var(--t1)}
+.article-body h2{font-size:20px;font-weight:700;margin:2.5rem 0 1rem;padding-bottom:.5rem;border-bottom:2px solid;border-image:linear-gradient(90deg,#d4a843,transparent) 1;position:relative}
+.article-body h2::before{content:"";position:absolute;left:0;bottom:-2px;width:60px;height:2px;background:linear-gradient(90deg,#d4a843,#c9507a)}
+.article-body h3{font-size:17px;font-weight:700;margin:1.75rem 0 .75rem;color:var(--c2)}
+.article-body p{margin-bottom:1.25rem}
+.article-body strong{color:var(--c1);font-weight:700}
+
+.photo-embed{background:var(--s1);border-radius:16px;overflow:hidden;margin:2rem 0;border:0.5px solid rgba(212,168,67,0.2);box-shadow:0 4px 20px rgba(26,10,46,0.08)}
+.photo-placeholder{height:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;background:linear-gradient(160deg,#0d1f3c,#1a3a5c,#4a9ab0);color:rgba(255,255,255,0.8);font-size:14px}
+.photo-placeholder span{font-size:40px}
+.photo-caption{padding:.875rem 1.25rem;font-size:13px;color:var(--t2);border-top:0.5px solid rgba(212,168,67,0.15)}
+
+.tweet-embed-box{background:var(--s1);border-radius:16px;overflow:hidden;margin:2rem 0;border:0.5px solid rgba(212,168,67,0.2);box-shadow:0 4px 20px rgba(26,10,46,0.08);padding:1.25rem}
+
+.highlight-box{background:linear-gradient(135deg,#fdf5e8,#fdf0f5);border:0.5px solid rgba(212,168,67,0.3);border-radius:12px;padding:1.5rem;margin:2rem 0}
+.highlight-box h4{font-size:15px;font-weight:700;margin-bottom:.75rem;color:var(--c1)}
+.highlight-box ul{padding-left:1.25rem;font-size:14px;color:var(--t2);line-height:1.8}
+
+.rating-box{background:var(--s1);border-radius:16px;border:0.5px solid rgba(212,168,67,0.25);padding:1.5rem;margin:2rem 0;box-shadow:0 2px 12px rgba(26,10,46,0.06)}
+.rating-box h4{font-size:15px;font-weight:700;margin-bottom:1.25rem;color:var(--c1)}
+.rating-row{display:flex;align-items:center;gap:.875rem;margin-bottom:.75rem}
+.rating-label{width:80px;font-size:13px;color:var(--t2);flex-shrink:0}
+.rating-bar{flex:1;height:8px;background:#f0e8f5;border-radius:4px;overflow:hidden}
+.rating-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,#d4a843,#c9507a)}
+.rating-score{font-size:13px;font-weight:700;color:var(--c1);width:28px;text-align:right}
+
+.aff-card{border-radius:14px;overflow:hidden;background:var(--s1);border:0.5px solid rgba(212,168,67,0.25);margin:2rem 0;box-shadow:0 2px 12px rgba(26,10,46,0.06)}
+.aff-card-head{padding:.875rem 1.25rem;background:linear-gradient(135deg,var(--c1),var(--c2));display:flex;align-items:center;gap:8px}
+.aff-card-head span{color:var(--acc2);font-size:13px;font-weight:600;letter-spacing:.04em}
+.aff-card-body{padding:1.125rem 1.25rem}
+.aff-card-body p{font-size:13px;color:var(--t2);margin-bottom:1rem;line-height:1.6}
+.btn-aff{display:inline-block;padding:10px 20px;border-radius:30px;font-size:13px;font-weight:600;cursor:pointer;transition:opacity .2s,transform .15s;letter-spacing:.03em}
+.btn-aff:hover{opacity:.85;transform:translateY(-1px)}
+.btn-ikyu{background:linear-gradient(135deg,#6b1a2a,#9b2335);color:#fff;box-shadow:0 3px 14px rgba(107,26,42,0.35)}
+.placeholder-note{font-size:11px;color:var(--tm);margin-top:6px}
+
+.breadcrumb{padding:1rem 0;font-size:13px;color:var(--tm)}
+.breadcrumb a{color:var(--tm)}
+.breadcrumb a:hover{color:var(--acc)}
+
+/* Sidebar */
+.widget{background:var(--s1);border-radius:14px;border:0.5px solid rgba(212,168,67,0.2);overflow:hidden;margin-bottom:1.5rem;box-shadow:0 2px 12px rgba(26,10,46,0.05)}
+.widget-head{padding:.875rem 1.125rem;background:linear-gradient(135deg,var(--c1),var(--c2));color:var(--acc2);font-size:13px;font-weight:700;letter-spacing:.05em}
+.widget-body{padding:1.125rem}
+.profile-mini{display:flex;align-items:center;gap:.875rem}
+.profile-mini-avatar{width:52px;height:52px;border-radius:50%;flex-shrink:0;overflow:hidden;border:2px solid rgba(212,168,67,0.5)}
+.profile-mini-text{font-size:13px;color:var(--t2);line-height:1.5}
+.profile-mini-text strong{display:block;color:var(--c1);margin-bottom:2px}
+
+.aff-disclaimer{background:linear-gradient(135deg,#fdf5e8,#fdf0f5);border:0.5px solid rgba(212,168,67,0.3);border-radius:10px;padding:.875rem 1.125rem;font-size:12px;color:var(--t2);margin-top:2rem;line-height:1.7}
+
+footer{background:var(--c1);border-top:1px solid rgba(212,168,67,0.2);color:rgba(255,255,255,0.5);text-align:center;padding:2.5rem 1rem;font-size:13px;margin-top:3rem}
+.footer-title{font-size:16px;font-weight:700;margin-bottom:.375rem;background:var(--gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+footer a{color:rgba(255,255,255,0.4)}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">港区在住外資系キャリアウーマン<span>松子</span>のぶらり世界旅</a>
+  <nav>
+    <a href="index.html#">国内</a>
+    <a href="index.html#">海外</a>
+    <a href="index.html#">ホテル</a>
+    <a href="index.html#">グルメ</a>
+  </nav>
+</header>
+
+<div class="gold-strip"></div>
+
+<section class="article-hero">
+  <div class="article-hero-bg"></div>
+  <div class="article-hero-sparkle"></div>
+  <div class="article-hero-overlay"></div>
+  <div class="article-hero-content container">
+    <div class="article-eyebrow">🏨 ホテル宿泊記 · 国内 / 日光</div>
+    <h1>中禅寺湖スイートに泊まってきた！<br><em>湖畔の絶景</em>と極上の一夜</h1>
+    <div class="article-meta">
+      <span>📅 2025年11月</span>
+      <span>✍️ 松子</span>
+      <span>📍 栃木県 日光市</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="index.html">HOME</a> › <a href="index.html">国内旅行</a> › 中禅寺湖スイート宿泊記
+  </div>
+
+  <div class="article-layout">
+    <article class="article-body">
+
+      <p>きたよ〜〜〜！！！！💗💗💗💗💗<br>
+      念願の<strong>中禅寺湖スイート</strong>、ついに泊まってきました！！✨✨<br>
+      もうね、お部屋に入った瞬間に「めちゃ大好きなお部屋〜〜！！😆😆😆」って叫んでしまいました笑。</p>
+
+      <p>東京から約2時間、日光・中禅寺湖畔に佇む湖畔のホテル。秋の紅葉シーズンを少し過ぎた11月末、静けさの中で楽しむ湖の絶景は格別でした。今回はそのリアルな体験を全部お届けします！</p>
+
+      <div class="tweet-embed-box">
+        <blockquote class="twitter-tweet" data-lang="ja">
+          <a href="https://x.com/tabiwoaisuru/status/1993932239659471070"></a>
+        </blockquote>
+      </div>
+
+      <h2>アクセス・チェックイン</h2>
+
+      <p>新宿から東武特急スペーシアXで東武日光駅まで約2時間。そこからバスで中禅寺湖畔まで約40分。いろは坂を上るワクワク感、これがまた旅気分を高めてくれるんですよね！</p>
+
+      <p>チェックインは15時。ロビーからすでに<strong>中禅寺湖の眺望</strong>が広がっていて、もうこの時点でテンションMAX。スタッフの方が丁寧にお部屋まで案内してくれました。</p>
+
+      <h2>お部屋（スイートルーム）</h2>
+
+      <p>今回泊まったのはスイートルーム。広さは約80㎡で、リビングルームとベッドルームが分かれた完全な2ルーム仕様。天井が高くて開放感がすごい！</p>
+
+      <h3>眺望が最高すぎる</h3>
+      <p>部屋の大きな窓から<strong>中禅寺湖が一望</strong>できるんですが、これがもう…言葉にならないくらい美しい。朝靄の中に浮かぶ湖面、夕暮れ時のオレンジ色の水面、夜の星空が映る真っ暗な湖。時間ごとに全然違う顔を見せてくれます。</p>
+
+      <h3>インテリアが好みすぎた</h3>
+      <p>木目調のシックなインテリアに、温かみのある照明。ソファも大きくて、ここでゴロゴロしてたら時間があっという間に過ぎていく…。ベッドはキングサイズで、寝心地も最高でした。</p>
+
+      <div class="highlight-box">
+        <h4>✦ お部屋のポイントまとめ</h4>
+        <ul>
+          <li>中禅寺湖を一望できる大きな窓</li>
+          <li>リビング＋ベッドルームの2ルーム仕様</li>
+          <li>モダン和テイストの落ち着くインテリア</li>
+          <li>キングサイズベッドで快適な睡眠</li>
+          <li>バスルームからも湖が見える（最高）</li>
+        </ul>
+      </div>
+
+      <h2>お食事</h2>
+      <p>夕食はホテル内のレストランで。<strong>地元・日光の食材をふんだんに使ったコース料理</strong>で、前菜から丁寧に作られていて感動。特に鹿沼産の野菜を使ったサラダと、栃木和牛のステーキは絶品でした。</p>
+
+      <p>朝食は和食・洋食から選べる形式。松子は迷わず和食！おひつに入ったご飯、地元の漬物、出汁が効いたお味噌汁… 朝から完璧すぎる。</p>
+
+      <h2>施設・周辺観光</h2>
+      <p>ホテル内には温泉もあり（内湯・露天）、これが中禅寺湖を見ながら入れる最高の環境。紅葉シーズンは終わっていたけど、晩秋の澄んだ空気の中で入る露天風呂は格別でした。</p>
+
+      <p>翌日は<strong>日光東照宮</strong>まで足を伸ばして観光。中禅寺湖周辺も散策して、華厳の滝にも立ち寄り。自然と歴史の両方が楽しめる日光、最高すぎる！</p>
+
+      <div class="rating-box">
+        <h4>松子の総合評価</h4>
+        <div class="rating-row">
+          <span class="rating-label">眺望・立地</span>
+          <div class="rating-bar"><div class="rating-fill" style="width:98%"></div></div>
+          <span class="rating-score">5.0</span>
+        </div>
+        <div class="rating-row">
+          <span class="rating-label">お部屋</span>
+          <div class="rating-bar"><div class="rating-fill" style="width:96%"></div></div>
+          <span class="rating-score">4.8</span>
+        </div>
+        <div class="rating-row">
+          <span class="rating-label">お食事</span>
+          <div class="rating-bar"><div class="rating-fill" style="width:90%"></div></div>
+          <span class="rating-score">4.5</span>
+        </div>
+        <div class="rating-row">
+          <span class="rating-label">温泉・施設</span>
+          <div class="rating-bar"><div class="rating-fill" style="width:92%"></div></div>
+          <span class="rating-score">4.6</span>
+        </div>
+        <div class="rating-row">
+          <span class="rating-label">サービス</span>
+          <div class="rating-bar"><div class="rating-fill" style="width:94%"></div></div>
+          <span class="rating-score">4.7</span>
+        </div>
+      </div>
+
+      <h2>まとめ・松子の本音</h2>
+      <p>中禅寺湖スイート、<strong>めちゃくちゃ大好きになりました</strong>💗。眺望・お部屋・食事・温泉、全部が高水準で「また絶対来たい」と思えるホテルです。特に紅葉ピーク（10月中旬〜11月初旬）に合わせて来れたら最高だと思う！</p>
+
+      <p>東京から日帰りもできる距離だけど、絶対1泊はしてほしい。朝の中禅寺湖を見てから帰るのが松子的最高の過ごし方です✨</p>
+
+      <div class="aff-card">
+        <div class="aff-card-head"><span>🏨 一休.comで中禅寺湖・日光の宿を探す</span></div>
+        <div class="aff-card-body">
+          <p>松子も使っている一休.com。中禅寺湖周辺の高級ホテル・旅館を特別プランで予約できます。スイートルームは早めの予約がおすすめ！</p>
+          <a href="#" class="btn-aff btn-ikyu">一休で日光・中禅寺湖の宿を探す →</a>
+          <p class="placeholder-note">※ アフィリエイトリンク登録後に差し替え予定</p>
+        </div>
+      </div>
+
+      <div class="aff-disclaimer">
+        ⚠️ 本サイトは一休.com・Expediaほか各社アフィリエイトプログラムに参加しており、リンク経由での予約により報酬を受け取る場合があります。記事内の情報は執筆時点のものです。
+      </div>
+    </article>
+
+    <aside class="article-sidebar">
+      <div class="widget">
+        <div class="widget-head">✍️ この記事を書いた人</div>
+        <div class="widget-body">
+          <div class="profile-mini">
+            <div class="profile-mini-avatar"><img src="matsuko-icon.svg" alt="松子" width="52" height="52"></div>
+            <div class="profile-mini-text">
+              <strong>松子（Matsuko）</strong>
+              港区在住の外資系キャリアウーマン。マリオットチタン・JGC・SFC保有。一休ダイヤモンド会員。
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="widget">
+        <div class="widget-head">🏨 一休で日光の宿を検索</div>
+        <div class="widget-body">
+          <p style="font-size:13px;color:var(--t2);margin-bottom:1rem;line-height:1.6">中禅寺湖・日光周辺の高級旅館・ホテル。会員限定プランがお得。</p>
+          <a href="#" class="btn-aff btn-ikyu" style="display:block;text-align:center;padding:12px">一休で探す →</a>
+          <p class="placeholder-note" style="margin-top:6px;text-align:center">※ アフィリエイトリンク登録後に差し替え</p>
+        </div>
+      </div>
+
+      <div class="widget">
+        <div class="widget-head">𝕏 松子のリアルタイム投稿</div>
+        <div class="widget-body" style="padding:.75rem">
+          <blockquote class="twitter-tweet" data-lang="ja" data-theme="light">
+            <a href="https://x.com/tabiwoaisuru/status/1993932239659471070"></a>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="widget">
+        <div class="widget-head">📖 関連記事</div>
+        <div class="widget-body">
+          <div style="display:flex;flex-direction:column;gap:.875rem">
+            <a href="disney-cruise.html" style="display:flex;gap:.75rem;align-items:flex-start">
+              <div style="width:50px;height:50px;border-radius:8px;flex-shrink:0;background:linear-gradient(135deg,#1a0a2e,#4a1a6b,#c9507a)"></div>
+              <div>
+                <div style="font-size:13px;font-weight:600;color:var(--c1);line-height:1.4">ディズニークルーズ、夢の船旅を体験してきた</div>
+                <div style="font-size:11px;color:var(--tm);margin-top:3px">海外 · 2025年</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <p class="footer-title">港区在住外資系キャリアウーマン松子のぶらり世界旅</p>
+  <p>国内・海外の旅行記とお得な予約情報をお届け</p>
+  <p style="margin-top:1rem;font-size:11px"><a href="#">プライバシーポリシー</a> · <a href="#">お問い合わせ</a> · <a href="index.html">トップへ戻る</a></p>
+</footer>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
