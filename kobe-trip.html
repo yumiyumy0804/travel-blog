@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10泊11日の長旅ラストは神戸シェラトンで温泉！神戸旅行記 | 松子のぶらり世界旅</title>
+<link rel="icon" type="image/svg+xml" href="matsuko-icon.svg">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --c1:#1a0a2e;--c2:#2d1457;
+  --acc:#d4a843;--acc2:#e8c97a;--acc3:#f0dfa0;
+  --rose:#c9507a;--bg:#fdf8f5;--s1:#ffffff;--t1:#1a0a2e;--t2:#6b5c7a;--tm:#b0a0bc;
+  --gold:linear-gradient(135deg,#d4a843,#f0dfa0,#d4a843);
+}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP',sans-serif;background:var(--bg);color:var(--t1);line-height:1.7}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+
+header{background:var(--c1);padding:0 1.5rem;position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;height:60px;border-bottom:1px solid rgba(212,168,67,0.3)}
+.logo{color:#fff;font-size:15px;font-weight:700;letter-spacing:.04em;line-height:1.3}
+.logo span{background:var(--gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+nav a{color:rgba(255,255,255,0.65);font-size:13px;margin-left:1.5rem}
+nav a:hover{color:var(--acc2)}
+
+.gold-strip{height:3px;background:linear-gradient(90deg,transparent,#d4a843,#f0dfa0,#d4a843,transparent)}
+
+.article-hero{position:relative;height:480px;overflow:hidden;display:flex;align-items:flex-end;padding:2.5rem}
+.hero-photo{position:absolute;inset:0}
+.hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,4,24,0.9) 0%,rgba(10,4,24,0.3) 60%,transparent 100%)}
+.article-hero-content{position:relative;z-index:1;max-width:800px}
+.article-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(212,168,67,0.2);border:0.5px solid rgba(212,168,67,0.4);color:var(--acc2);font-size:12px;padding:5px 14px;border-radius:20px;margin-bottom:1rem;letter-spacing:.08em}
+.article-hero-content h1{font-size:clamp(22px,4vw,38px);font-weight:700;color:#fff;line-height:1.4;margin-bottom:1rem;text-shadow:0 2px 20px rgba(0,0,0,0.6)}
+.article-hero-content h1 em{background:var(--gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:normal}
+.article-meta{display:flex;gap:1.25rem;color:rgba(255,255,255,0.6);font-size:13px}
+
+.container{max-width:960px;margin:0 auto;padding:0 1.5rem}
+.article-layout{display:grid;grid-template-columns:1fr 280px;gap:2.5rem;padding:2.5rem 0}
+@media(max-width:768px){.article-layout{grid-template-columns:1fr}.article-sidebar{display:none}}
+
+.article-body{font-size:15px;line-height:1.9;color:var(--t1)}
+.article-body h2{font-size:20px;font-weight:700;margin:2.5rem 0 1rem;padding-bottom:.5rem;position:relative}
+.article-body h2::after{content:"";position:absolute;bottom:0;left:0;width:100%;height:1px;background:linear-gradient(90deg,rgba(212,168,67,0.6),transparent)}
+.article-body h2::before{content:"";position:absolute;bottom:-1px;left:0;width:60px;height:2px;background:linear-gradient(90deg,#d4a843,#c9507a)}
+.article-body h3{font-size:17px;font-weight:700;margin:1.75rem 0 .75rem;color:var(--c2)}
+.article-body p{margin-bottom:1.25rem}
+.article-body strong{color:var(--c1);font-weight:700}
+
+/* Photo layouts */
+.photo-grid{display:grid;gap:6px;margin:2rem 0;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(26,10,46,0.1)}
+.photo-grid.three{grid-template-columns:1fr 1fr}
+.photo-grid.three .pg-main{grid-column:1/-1;height:380px;overflow:hidden}
+.photo-grid.three .pg-sub{height:240px;overflow:hidden}
+.photo-grid.two{grid-template-columns:1fr 1fr}
+.photo-grid.two .pg-half{height:300px;overflow:hidden}
+.photo-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.photo-grid img:hover{transform:scale(1.03)}
+.photo-single{border-radius:16px;overflow:hidden;margin:2rem 0;box-shadow:0 4px 20px rgba(26,10,46,0.1)}
+.photo-single img{width:100%;max-height:460px;object-fit:cover}
+.photo-caption{font-size:12px;color:var(--tm);text-align:center;margin-top:.5rem;letter-spacing:.04em}
+
+.tweet-embed-box{background:var(--s1);border-radius:16px;overflow:hidden;margin:2rem 0;border:0.5px solid rgba(212,168,67,0.2);box-shadow:0 4px 20px rgba(26,10,46,0.08);padding:1.25rem}
+
+.highlight-box{background:linear-gradient(135deg,#fdf5e8,#fdf0f5);border:0.5px solid rgba(212,168,67,0.3);border-radius:12px;padding:1.5rem;margin:2rem 0}
+.highlight-box h4{font-size:15px;font-weight:700;margin-bottom:.75rem;color:var(--c1)}
+.highlight-box ul{padding-left:1.25rem;font-size:14px;color:var(--t2);line-height:1.8}
+
+.rating-box{background:var(--s1);border-radius:16px;border:0.5px solid rgba(212,168,67,0.25);padding:1.5rem;margin:2rem 0;box-shadow:0 2px 12px rgba(26,10,46,0.06)}
+.rating-box h4{font-size:15px;font-weight:700;margin-bottom:1.25rem;color:var(--c1)}
+.rating-row{display:flex;align-items:center;gap:.875rem;margin-bottom:.75rem}
+.rating-label{width:80px;font-size:13px;color:var(--t2);flex-shrink:0}
+.rating-bar{flex:1;height:8px;background:#f0e8f5;border-radius:4px;overflow:hidden}
+.rating-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,#d4a843,#c9507a)}
+.rating-score{font-size:13px;font-weight:700;color:var(--c1);width:28px;text-align:right}
+
+.aff-card{border-radius:14px;overflow:hidden;background:var(--s1);border:0.5px solid rgba(212,168,67,0.25);margin:2rem 0;box-shadow:0 2px 12px rgba(26,10,46,0.06)}
+.aff-card-head{padding:.875rem 1.25rem;background:linear-gradient(135deg,var(--c1),var(--c2));display:flex;align-items:center;gap:8px}
+.aff-card-head span{color:var(--acc2);font-size:13px;font-weight:600;letter-spacing:.04em}
+.aff-card-body{padding:1.125rem 1.25rem}
+.aff-card-body p{font-size:13px;color:var(--t2);margin-bottom:1rem;line-height:1.6}
+.btn-aff{display:inline-block;padding:10px 20px;border-radius:30px;font-size:13px;font-weight:600;cursor:pointer;transition:opacity .2s;letter-spacing:.03em}
+.btn-aff:hover{opacity:.85}
+.btn-ikyu{background:linear-gradient(135deg,#6b1a2a,#9b2335);color:#fff;box-shadow:0 3px 14px rgba(107,26,42,0.35)}
+.btn-expedia{background:linear-gradient(135deg,#00355f,#0057a0);color:#fff;box-shadow:0 3px 14px rgba(0,53,95,0.25)}
+.placeholder-note{font-size:11px;color:var(--tm);margin-top:6px}
+
+.breadcrumb{padding:1rem 0;font-size:13px;color:var(--tm)}
+.breadcrumb a{color:var(--tm)}
+.breadcrumb a:hover{color:var(--acc)}
+
+.widget{background:var(--s1);border-radius:14px;border:0.5px solid rgba(212,168,67,0.2);overflow:hidden;margin-bottom:1.5rem;box-shadow:0 2px 12px rgba(26,10,46,0.05)}
+.widget-head{padding:.875rem 1.125rem;background:linear-gradient(135deg,var(--c1),var(--c2));color:var(--acc2);font-size:13px;font-weight:700;letter-spacing:.05em}
+.widget-body{padding:1.125rem}
+.profile-mini{display:flex;align-items:center;gap:.875rem}
+.profile-mini-avatar{width:52px;height:52px;border-radius:50%;flex-shrink:0;overflow:hidden;border:2px solid rgba(212,168,67,0.5)}
+.profile-mini-text{font-size:13px;color:var(--t2);line-height:1.5}
+.profile-mini-text strong{display:block;color:var(--c1);margin-bottom:2px}
+
+.aff-disclaimer{background:linear-gradient(135deg,#fdf5e8,#fdf0f5);border:0.5px solid rgba(212,168,67,0.3);border-radius:10px;padding:.875rem 1.125rem;font-size:12px;color:var(--t2);margin-top:2rem;line-height:1.7}
+
+footer{background:var(--c1);border-top:1px solid rgba(212,168,67,0.2);color:rgba(255,255,255,0.5);text-align:center;padding:2.5rem 1rem;font-size:13px;margin-top:3rem}
+.footer-title{font-size:16px;font-weight:700;margin-bottom:.375rem;background:var(--gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+footer a{color:rgba(255,255,255,0.4)}
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">港区在住外資系キャリアウーマン<span>松子</span>のぶらり世界旅</a>
+  <nav>
+    <a href="index.html">国内</a>
+    <a href="index.html">海外</a>
+    <a href="index.html">ホテル</a>
+    <a href="index.html">グルメ</a>
+  </nav>
+</header>
+
+<div class="gold-strip"></div>
+
+<section class="article-hero">
+  <div class="hero-photo">
+    <img src="https://pbs.twimg.com/media/HTq2_k7a8AAJkNk?format=jpg&name=large" alt="神戸シェラトン" loading="eager">
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="article-hero-content container">
+    <div class="article-eyebrow">🏨 ホテル宿泊記 · 国内 / 神戸</div>
+    <h1>10泊11日の長旅ラストは<br><em>神戸シェラトンで温泉</em>♨️</h1>
+    <div class="article-meta">
+      <span>📅 2026年10月</span>
+      <span>✍️ 松子</span>
+      <span>📍 兵庫県 神戸市</span>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="breadcrumb">
+    <a href="index.html">HOME</a> › <a href="index.html">国内旅行</a> › 神戸10泊11日旅行記
+  </div>
+
+  <div class="article-layout">
+    <article class="article-body">
+
+      <p>10泊11日の長旅、最後の夜は<strong>神戸シェラトングランドホテル</strong>で締めくくってきました！！♨️✨<br>
+      「Last night！」って投稿した瞬間、もうこの旅が終わるのかって少し寂しくなりながらも、温泉で旅の疲れを全部癒してきました。</p>
+
+      <p>今回の10泊11日、いったいどんな旅だったのか…全部まとめてお届けします！</p>
+
+      <div class="photo-grid three">
+        <div class="pg-main"><img src="https://pbs.twimg.com/media/HTq2_k7a8AAJkNk?format=jpg&name=large" alt="神戸シェラトン" loading="lazy"></div>
+        <div class="pg-sub"><img src="https://pbs.twimg.com/media/HTq2_k9aUAAnrI_?format=jpg&name=large" alt="神戸シェラトン 温泉" loading="lazy"></div>
+        <div class="pg-sub"><img src="https://pbs.twimg.com/media/HTq2_k4bwAAOzF-?format=jpg&name=large" alt="神戸シェラトン 夜景" loading="lazy"></div>
+      </div>
+      <p class="photo-caption">📸 @tabiwoaisuru / 神戸シェラトングランドホテル</p>
+
+      <div class="tweet-embed-box">
+        <blockquote class="twitter-tweet" data-lang="ja">
+          <a href="https://x.com/tabiwoaisuru/status/2106196986416496790"></a>
+        </blockquote>
+      </div>
+
+      <h2>神戸シェラトングランドホテル</h2>
+
+      <p>神戸・ポートアイランドに位置する<strong>シェラトングランドホテル神戸</strong>。マリオット系列ということで、もちろんマリオットチタン会員の松子はアップグレード狙いで予約！</p>
+
+      <p>チェックインしたら、なんとオーシャンビューのお部屋にアップグレードしてもらえました💗。神戸港が一望できる眺望、最高すぎる。</p>
+
+      <div class="photo-single">
+        <img src="https://pbs.twimg.com/media/HTq2_k9aUAAnrI_?format=jpg&name=large" alt="神戸シェラトン 温泉・施設" loading="lazy">
+      </div>
+      <p class="photo-caption">シェラトングランドホテル神戸の施設</p>
+
+      <h3>温泉が最高すぎた件</h3>
+      <p>このホテルの最大の魅力はなんといっても<strong>天然温泉「THE SPA」</strong>。神戸の夜景を眺めながら入れる露天風呂は、10泊11日の旅の疲れをすべて溶かしてくれました。</p>
+
+      <p>泉質はナトリウム・炭酸水素塩泉で、お肌がつるつるになるやつ！長旅でカサカサになった肌が見事に復活しました笑。</p>
+
+      <h2>神戸の夜景と港をぶらり</h2>
+
+      <div class="photo-single">
+        <img src="https://pbs.twimg.com/media/HTq2_k4bwAAOzF-?format=jpg&name=large" alt="神戸の夜景" loading="lazy">
+      </div>
+      <p class="photo-caption">神戸駅を見下ろしながら乾杯🥂</p>
+
+      <p>神戸といえば夜景！🌉✨ メリケンパーク周辺を散策して、神戸ポートタワーの光を眺めながらワインを飲む…これが最高すぎる時間でした。</p>
+
+      <p>神戸駅周辺も散歩して、旧居留地のレトロな建物を見ながらカフェでひとやすみ。10泊11日の旅を振り返りながら飲むコーヒーの美味しいこと…！</p>
+
+      <h2>10泊11日の旅を振り返って</h2>
+
+      <div class="highlight-box">
+        <h4>✦ 10泊11日の旅、行った場所まとめ</h4>
+        <ul>
+          <li>神戸（最終日）：シェラトン泊、夜景・温泉</li>
+          <li>旅のハイライト：神戸の異国情緒あるまち歩き</li>
+          <li>グルメ：神戸牛・洋食・中華街・スイーツ</li>
+          <li>交通：新幹線＋ローカル鉄道でのんびり移動</li>
+        </ul>
+      </div>
+
+      <p>10泊11日、長い旅でした。「ちょっと長すぎた？」ってはじめは思ってたけど、最終的には「もっといたかった」という気持ちに。神戸で締めくくれて本当によかった。</p>
+
+      <div class="rating-box">
+        <h4>神戸シェラトングランドホテル 松子の評価</h4>
+        <div class="rating-row">
+          <span class="rating-label">眺望・立地</span>
+          <div class="rating-bar"><div class="rating-fill" style="width:90%"></div></div>
+          <span class="rating-score">4.5</span>
+        </div>
+        <div class="rating-row">
+          <span class="rating-label">温泉・施設</span>
+          <div class="rating-bar"><div class="rating-fill" style="width:96%"></div></div>
+          <span class="rating-score">4.8</span>
+        </div>
+        <div class="rating-row">
+          <span class="rating-label">お部屋</span>
+          <div class="rating-bar"><div class="rating-fill" style="width:88%"></div></div>
+          <span class="rating-score">4.4</span>
+        </div>
+        <div class="rating-row">
+          <span class="rating-label">マリオット特典</span>
+          <div class="rating-bar"><div class="rating-fill" style="width:94%"></div></div>
+          <span class="rating-score">4.7</span>
+        </div>
+      </div>
+
+      <div class="aff-card">
+        <div class="aff-card-head"><span>🏨 一休.comで神戸のホテルを探す</span></div>
+        <div class="aff-card-body">
+          <p>松子も使っている一休.com。神戸のラグジュアリーホテルから旅館まで、会員限定プランがお得です。</p>
+          <a href="#" class="btn-aff btn-ikyu">一休で神戸の宿を探す →</a>
+          <p class="placeholder-note">※ アフィリエイトリンク登録後に差し替え予定</p>
+        </div>
+      </div>
+
+      <div class="aff-disclaimer">
+        ⚠️ 本サイトは一休.com・Expediaほか各社アフィリエイトプログラムに参加しており、リンク経由での予約により報酬を受け取る場合があります。
+      </div>
+    </article>
+
+    <aside class="article-sidebar">
+      <div class="widget">
+        <div class="widget-head">✍️ この記事を書いた人</div>
+        <div class="widget-body">
+          <div class="profile-mini">
+            <div class="profile-mini-avatar"><img src="matsuko-icon.svg" alt="松子" width="52" height="52"></div>
+            <div class="profile-mini-text">
+              <strong>松子（Matsuko）</strong>
+              港区在住の外資系キャリアウーマン。マリオットチタン会員。10泊11日も余裕の旅人。
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="widget">
+        <div class="widget-head">🏨 一休で神戸のホテルを探す</div>
+        <div class="widget-body">
+          <p style="font-size:13px;color:var(--t2);margin-bottom:1rem;line-height:1.6">神戸の高級ホテル・旅館。マリオット系はポイントが貯まる。</p>
+          <a href="#" class="btn-aff btn-ikyu" style="display:block;text-align:center;padding:12px">一休で探す →</a>
+          <p class="placeholder-note" style="margin-top:6px;text-align:center">※ アフィリエイトリンク登録後に差し替え</p>
+        </div>
+      </div>
+
+      <div class="widget">
+        <div class="widget-head">𝕏 松子のリアルタイム投稿</div>
+        <div class="widget-body" style="padding:.75rem">
+          <blockquote class="twitter-tweet" data-lang="ja" data-theme="light">
+            <a href="https://x.com/tabiwoaisuru/status/2106196986416496790"></a>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="widget">
+        <div class="widget-head">📖 関連記事</div>
+        <div class="widget-body">
+          <div style="display:flex;flex-direction:column;gap:.875rem">
+            <a href="chuzenji-suite.html" style="display:flex;gap:.75rem;align-items:flex-start">
+              <div style="width:50px;height:50px;border-radius:8px;flex-shrink:0;background:linear-gradient(135deg,#0d1f3c,#4a9ab0);overflow:hidden">
+                <img src="https://pbs.twimg.com/media/G6vey_Ma0AEwh7q?format=jpg&name=small" alt="" style="width:100%;height:100%;object-fit:cover">
+              </div>
+              <div>
+                <div style="font-size:13px;font-weight:600;color:var(--c1);line-height:1.4">中禅寺湖スイートに泊まってきた！</div>
+                <div style="font-size:11px;color:var(--tm);margin-top:3px">国内 · 2025年11月</div>
+              </div>
+            </a>
+            <a href="singapore.html" style="display:flex;gap:.75rem;align-items:flex-start">
+              <div style="width:50px;height:50px;border-radius:8px;flex-shrink:0;background:linear-gradient(135deg,#0a2010,#1a4a2a,#4fc97a)"></div>
+              <div>
+                <div style="font-size:13px;font-weight:600;color:var(--c1);line-height:1.4">シンガポール観光、港区OLが行くべきスポット</div>
+                <div style="font-size:11px;color:var(--tm);margin-top:3px">海外 · シンガポール</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <p class="footer-title">港区在住外資系キャリアウーマン松子のぶらり世界旅</p>
+  <p>国内・海外の旅行記とお得な予約情報をお届け</p>
+  <p style="margin-top:1rem;font-size:11px"><a href="#">プライバシーポリシー</a> · <a href="index.html">トップへ戻る</a></p>
+</footer>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>

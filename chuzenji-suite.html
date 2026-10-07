@@ -55,6 +55,15 @@ nav a:hover{color:var(--acc2)}
 .photo-caption{padding:.875rem 1.25rem;font-size:13px;color:var(--t2);border-top:0.5px solid rgba(212,168,67,0.15)}
 
 .tweet-embed-box{background:var(--s1);border-radius:16px;overflow:hidden;margin:2rem 0;border:0.5px solid rgba(212,168,67,0.2);box-shadow:0 4px 20px rgba(26,10,46,0.08);padding:1.25rem}
+.photo-grid{display:grid;gap:6px;margin:2rem 0;border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(26,10,46,0.1)}
+.photo-grid.three .pg-main{grid-column:1/-1;height:360px;overflow:hidden}
+.photo-grid.three{grid-template-columns:1fr 1fr}
+.photo-grid.three .pg-sub{height:220px;overflow:hidden}
+.photo-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s}
+.photo-grid img:hover{transform:scale(1.02)}
+.photo-caption{font-size:12px;color:var(--tm);text-align:center;margin-top:.5rem;letter-spacing:.04em}
+.photo-single{border-radius:16px;overflow:hidden;margin:2rem 0;box-shadow:0 4px 20px rgba(26,10,46,0.1)}
+.photo-single img{width:100%;max-height:440px;object-fit:cover}
 
 .highlight-box{background:linear-gradient(135deg,#fdf5e8,#fdf0f5);border:0.5px solid rgba(212,168,67,0.3);border-radius:12px;padding:1.5rem;margin:2rem 0}
 .highlight-box h4{font-size:15px;font-weight:700;margin-bottom:.75rem;color:var(--c1)}
@@ -141,11 +150,12 @@ footer a{color:rgba(255,255,255,0.4)}
 
       <p>東京から約2時間、日光・中禅寺湖畔に佇む湖畔のホテル。秋の紅葉シーズンを少し過ぎた11月末、静けさの中で楽しむ湖の絶景は格別でした。今回はそのリアルな体験を全部お届けします！</p>
 
-      <div class="tweet-embed-box">
-        <blockquote class="twitter-tweet" data-lang="ja">
-          <a href="https://x.com/tabiwoaisuru/status/1993932239659471070"></a>
-        </blockquote>
+      <div class="photo-grid three">
+        <div class="pg-main"><img src="https://pbs.twimg.com/media/G6vey_Ma0AEwh7q?format=jpg&name=large" alt="中禅寺湖スイート リビングルーム" loading="lazy"></div>
+        <div class="pg-sub"><img src="https://pbs.twimg.com/media/G6vey_MbkAAgbos?format=jpg&name=large" alt="中禅寺湖スイート 湖ビュー" loading="lazy"></div>
+        <div class="pg-sub"><img src="https://pbs.twimg.com/media/G6vey_Na0AUKVP4?format=jpg&name=large" alt="中禅寺湖スイート インテリア" loading="lazy"></div>
       </div>
+      <p class="photo-caption">📸 @tabiwoaisuru / 中禅寺湖スイートのお部屋</p>
 
       <h2>アクセス・チェックイン</h2>
 
@@ -156,6 +166,11 @@ footer a{color:rgba(255,255,255,0.4)}
       <h2>お部屋（スイートルーム）</h2>
 
       <p>今回泊まったのはスイートルーム。広さは約80㎡で、リビングルームとベッドルームが分かれた完全な2ルーム仕様。天井が高くて開放感がすごい！</p>
+
+      <div class="photo-single">
+        <img src="https://pbs.twimg.com/media/G6vey_MbkAAgbos?format=jpg&name=large" alt="中禅寺湖スイート 湖ビュー" loading="lazy">
+      </div>
+      <p class="photo-caption">大きな窓から中禅寺湖が一望できる絶景リビング</p>
 
       <h3>眺望が最高すぎる</h3>
       <p>部屋の大きな窓から<strong>中禅寺湖が一望</strong>できるんですが、これがもう…言葉にならないくらい美しい。朝靄の中に浮かぶ湖面、夕暮れ時のオレンジ色の水面、夜の星空が映る真っ暗な湖。時間ごとに全然違う顔を見せてくれます。</p>
@@ -173,6 +188,11 @@ footer a{color:rgba(255,255,255,0.4)}
           <li>バスルームからも湖が見える（最高）</li>
         </ul>
       </div>
+
+      <div class="photo-single">
+        <img src="https://pbs.twimg.com/media/G6vey_Na0AUKVP4?format=jpg&name=large" alt="中禅寺湖スイート お部屋" loading="lazy">
+      </div>
+      <p class="photo-caption">木目とアースカラーで統一された、落ち着きのあるお部屋</p>
 
       <h2>お食事</h2>
       <p>夕食はホテル内のレストランで。<strong>地元・日光の食材をふんだんに使ったコース料理</strong>で、前菜から丁寧に作られていて感動。特に鹿沼産の野菜を使ったサラダと、栃木和牛のステーキは絶品でした。</p>

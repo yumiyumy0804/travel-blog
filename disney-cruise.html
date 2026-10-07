@@ -10,9 +10,7 @@
 :root{
   --c1:#1a0a2e;--c2:#2d1457;
   --acc:#d4a843;--acc2:#e8c97a;--acc3:#f0dfa0;
-  --rose:#c9507a;--roseli:#f7c5d8;
-  --bg:#fdf8f5;--s1:#ffffff;--t1:#1a0a2e;--t2:#6b5c7a;--tm:#b0a0bc;
-  --r:10px;
+  --rose:#c9507a;--bg:#fdf8f5;--s1:#ffffff;--t1:#1a0a2e;--t2:#6b5c7a;--tm:#b0a0bc;
   --gold:linear-gradient(135deg,#d4a843,#f0dfa0,#d4a843);
 }
 html{scroll-behavior:smooth}
@@ -23,14 +21,14 @@ img{max-width:100%;display:block}
 header{background:var(--c1);padding:0 1.5rem;position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;height:60px;border-bottom:1px solid rgba(212,168,67,0.3)}
 .logo{color:#fff;font-size:15px;font-weight:700;letter-spacing:.04em;line-height:1.3}
 .logo span{background:var(--gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-nav a{color:rgba(255,255,255,0.65);font-size:13px;transition:color .2s;letter-spacing:.04em;margin-left:1.5rem}
+nav a{color:rgba(255,255,255,0.65);font-size:13px;margin-left:1.5rem}
 nav a:hover{color:var(--acc2)}
 
 .gold-strip{height:3px;background:linear-gradient(90deg,transparent,#d4a843,#f0dfa0,#d4a843,transparent)}
 
 .article-hero{position:relative;height:440px;overflow:hidden;display:flex;align-items:flex-end;padding:2.5rem}
 .article-hero-bg{position:absolute;inset:0;background:linear-gradient(160deg,#0a0820 0%,#1a0a2e 30%,#3d1a6b 60%,#6b2d9b 100%)}
-.article-hero-sparkle{position:absolute;inset:0;background-image:radial-gradient(circle at 20% 40%,rgba(212,168,67,0.25) 0%,transparent 50%),radial-gradient(circle at 75% 60%,rgba(201,80,122,0.2) 0%,transparent 40%),radial-gradient(circle at 50% 80%,rgba(100,180,255,0.1) 0%,transparent 40%)}
+.article-hero-sparkle{position:absolute;inset:0;background-image:radial-gradient(circle at 20% 40%,rgba(212,168,67,0.25) 0%,transparent 50%),radial-gradient(circle at 75% 60%,rgba(201,80,122,0.2) 0%,transparent 40%)}
 .article-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,4,24,0.85) 0%,rgba(10,4,24,0.2) 70%,transparent 100%)}
 .article-hero-content{position:relative;z-index:1;max-width:800px}
 .article-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(212,168,67,0.2);border:0.5px solid rgba(212,168,67,0.4);color:var(--acc2);font-size:12px;padding:5px 14px;border-radius:20px;margin-bottom:1rem;letter-spacing:.08em}
@@ -43,44 +41,49 @@ nav a:hover{color:var(--acc2)}
 @media(max-width:768px){.article-layout{grid-template-columns:1fr}.article-sidebar{display:none}}
 
 .article-body{font-size:15px;line-height:1.9;color:var(--t1)}
-.article-body h2{font-size:20px;font-weight:700;margin:2.5rem 0 1rem;padding-bottom:.5rem;border-bottom:2px solid;border-image:linear-gradient(90deg,#d4a843,transparent) 1;position:relative}
-.article-body h2::before{content:"";position:absolute;left:0;bottom:-2px;width:60px;height:2px;background:linear-gradient(90deg,#d4a843,#c9507a)}
+.article-body h2{font-size:20px;font-weight:700;margin:2.5rem 0 1rem;padding-bottom:.5rem;position:relative}
+.article-body h2::after{content:"";position:absolute;bottom:0;left:0;width:100%;height:1px;background:linear-gradient(90deg,rgba(212,168,67,0.6),transparent)}
+.article-body h2::before{content:"";position:absolute;bottom:-1px;left:0;width:60px;height:2px;background:linear-gradient(90deg,#d4a843,#c9507a)}
 .article-body h3{font-size:17px;font-weight:700;margin:1.75rem 0 .75rem;color:var(--c2)}
 .article-body p{margin-bottom:1.25rem}
 .article-body strong{color:var(--c1);font-weight:700}
+
+.tweet-gallery{margin:2rem 0}
+.tweet-gallery-head{font-size:13px;color:var(--tm);margin-bottom:.875rem;font-weight:600;letter-spacing:.04em}
+.tweet-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+@media(max-width:600px){.tweet-row{grid-template-columns:1fr}}
+.tweet-embed-box{background:var(--s1);border-radius:16px;overflow:hidden;margin:2rem 0;border:0.5px solid rgba(212,168,67,0.2);box-shadow:0 4px 20px rgba(26,10,46,0.08);padding:1.25rem}
+
+.photo-placeholder-box{background:linear-gradient(135deg,#1a0a2e,#4a1a6b);border-radius:16px;padding:3rem 2rem;text-align:center;margin:2rem 0;color:rgba(255,255,255,0.7);border:1px dashed rgba(212,168,67,0.3)}
+.photo-placeholder-box .icon{font-size:48px;margin-bottom:1rem}
+.photo-placeholder-box p{font-size:14px;line-height:1.7}
 
 .highlight-box{background:linear-gradient(135deg,#fdf5e8,#fdf0f5);border:0.5px solid rgba(212,168,67,0.3);border-radius:12px;padding:1.5rem;margin:2rem 0}
 .highlight-box h4{font-size:15px;font-weight:700;margin-bottom:.75rem;color:var(--c1)}
 .highlight-box ul{padding-left:1.25rem;font-size:14px;color:var(--t2);line-height:1.8}
 
-.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2rem 0}
-@media(max-width:500px){.info-grid{grid-template-columns:1fr}}
-.info-card{background:var(--s1);border-radius:12px;padding:1.25rem;border:0.5px solid rgba(212,168,67,0.2);text-align:center}
-.info-card .icon{font-size:28px;margin-bottom:.5rem}
-.info-card h5{font-size:14px;font-weight:700;color:var(--c1);margin-bottom:.375rem}
-.info-card p{font-size:13px;color:var(--t2);line-height:1.5}
+.info-note{background:linear-gradient(135deg,#eef5ff,#e8f0ff);border:0.5px solid rgba(100,150,255,0.3);border-radius:10px;padding:1rem 1.25rem;margin:1.5rem 0;font-size:13px;color:#3a4a7a;line-height:1.6}
 
 .rating-box{background:var(--s1);border-radius:16px;border:0.5px solid rgba(212,168,67,0.25);padding:1.5rem;margin:2rem 0;box-shadow:0 2px 12px rgba(26,10,46,0.06)}
 .rating-box h4{font-size:15px;font-weight:700;margin-bottom:1.25rem;color:var(--c1)}
 .rating-row{display:flex;align-items:center;gap:.875rem;margin-bottom:.75rem}
-.rating-label{width:100px;font-size:13px;color:var(--t2);flex-shrink:0}
+.rating-label{width:120px;font-size:13px;color:var(--t2);flex-shrink:0}
 .rating-bar{flex:1;height:8px;background:#f0e8f5;border-radius:4px;overflow:hidden}
 .rating-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,#d4a843,#c9507a)}
 .rating-score{font-size:13px;font-weight:700;color:var(--c1);width:28px;text-align:right}
 
 .aff-card{border-radius:14px;overflow:hidden;background:var(--s1);border:0.5px solid rgba(212,168,67,0.25);margin:2rem 0;box-shadow:0 2px 12px rgba(26,10,46,0.06)}
-.aff-card-head{padding:.875rem 1.25rem;background:linear-gradient(135deg,var(--c1),var(--c2));display:flex;align-items:center;gap:8px}
+.aff-card-head{padding:.875rem 1.25rem;background:linear-gradient(135deg,var(--c1),var(--c2))}
 .aff-card-head span{color:var(--acc2);font-size:13px;font-weight:600;letter-spacing:.04em}
 .aff-card-body{padding:1.125rem 1.25rem}
 .aff-card-body p{font-size:13px;color:var(--t2);margin-bottom:1rem;line-height:1.6}
-.btn-aff{display:inline-block;padding:10px 20px;border-radius:30px;font-size:13px;font-weight:600;cursor:pointer;transition:opacity .2s,transform .15s;letter-spacing:.03em}
-.btn-aff:hover{opacity:.85;transform:translateY(-1px)}
+.btn-aff{display:inline-block;padding:10px 20px;border-radius:30px;font-size:13px;font-weight:600;transition:opacity .2s;letter-spacing:.03em}
+.btn-aff:hover{opacity:.85}
 .btn-expedia{background:linear-gradient(135deg,#00355f,#0057a0);color:#fff;box-shadow:0 3px 14px rgba(0,53,95,0.25)}
 .placeholder-note{font-size:11px;color:var(--tm);margin-top:6px}
 
 .breadcrumb{padding:1rem 0;font-size:13px;color:var(--tm)}
 .breadcrumb a{color:var(--tm)}
-.breadcrumb a:hover{color:var(--acc)}
 
 .widget{background:var(--s1);border-radius:14px;border:0.5px solid rgba(212,168,67,0.2);overflow:hidden;margin-bottom:1.5rem;box-shadow:0 2px 12px rgba(26,10,46,0.05)}
 .widget-head{padding:.875rem 1.125rem;background:linear-gradient(135deg,var(--c1),var(--c2));color:var(--acc2);font-size:13px;font-weight:700;letter-spacing:.05em}
@@ -137,69 +140,75 @@ footer a{color:rgba(255,255,255,0.4)}
       <p>ずっと夢だったディズニークルーズ、ついに乗ってきました🩷🩷🩷！！！<br>
       「クルーズ＝おじさんおばさんの旅」とか思ってたんだけど、<strong>ディズニークルーズは全然違う</strong>！むしろ大人の方が楽しめる、最高の船旅でした。</p>
 
-      <p>今回は初めてのクルーズということで、アジア航路を選択。約4泊5日の船旅を松子が全レポします！</p>
-
-      <div class="info-grid">
-        <div class="info-card">
-          <div class="icon">🚢</div>
-          <h5>乗船した船</h5>
-          <p>ディズニー・アドベンチャー<br>（2025年 シンガポール発着）</p>
-        </div>
-        <div class="info-card">
-          <div class="icon">📅</div>
-          <h5>旅程</h5>
-          <p>4泊5日<br>シンガポール発着</p>
-        </div>
-        <div class="info-card">
-          <div class="icon">🏢</div>
-          <h5>お部屋</h5>
-          <p>コンシェルジュ・クラス<br>（バルコニー付き）</p>
-        </div>
-        <div class="info-card">
-          <div class="icon">💰</div>
-          <h5>予約方法</h5>
-          <p>Expedia経由でパッケージ<br>（シンガポール往復＋乗船）</p>
-        </div>
+      <div class="info-note">
+        📸 ディズニークルーズの写真・詳細は <a href="https://x.com/tabiwoaisuru" target="_blank" rel="noopener" style="color:#5577cc;text-decoration:underline">@tabiwoaisuru のX</a> で随時更新中！
       </div>
 
-      <h2>乗船〜客室チェック</h2>
+      <div class="photo-placeholder-box">
+        <div class="icon">🚢✨</div>
+        <p>ディズニークルーズの写真はXの投稿URLを追加すると<br>ここに実際の写真が表示されます</p>
+      </div>
 
-      <p>シンガポール・マリーナベイクルーズセンターから出発。ターミナルに入った瞬間から<strong>ディズニーのBGMが流れていて</strong>、もうこの時点でテンション上がりまくり！笑</p>
+      <h2>乗船〜チェックイン</h2>
+
+      <p>ターミナルに入った瞬間から<strong>ディズニーのBGMが流れていて</strong>、もうこの時点でテンション上がりまくり！笑</p>
 
       <p>チェックイン手続きを済ませて乗船すると、キャストさんたちが名前を呼んで「〇〇さん、ようこそディズニークルーズへ！」と出迎えてくれる演出があって、これだけで感動して泣きそうになりました（え）。</p>
 
-      <h3>お部屋（コンシェルジュ・クラス）</h3>
-      <p>今回はコンシェルジュ・クラスのバルコニー付き客室を選択。広さは約26㎡で、船の客室にしてはかなり広め。バルコニーから海を眺めながらシャンパンを飲む…これが夢でした。叶えた！！</p>
+      <h2>客室について</h2>
 
-      <p>コンシェルジュ・クラスの特典として、専用ラウンジが使えるのが最高。朝のコーヒーから夜のカクテルアワーまで、終日スナックと飲み物が無料で楽しめます。港区OLにはぴったりのラグジュアリー仕様。</p>
+      <div class="photo-placeholder-box">
+        <div class="icon">🛏️</div>
+        <p>お部屋の写真（Xの投稿URLを追加してください）</p>
+      </div>
+
+      <p>コンシェルジュ・クラスのバルコニー付き客室は、船の客室にしてはかなり広め。バルコニーから海を眺めながらシャンパンを飲む…夢でした。叶えた！！</p>
+
+      <p>コンシェルジュ・クラスの専用ラウンジが使えるのも最高。朝のコーヒーから夜のカクテルアワーまで、終日スナックと飲み物が無料。</p>
 
       <h2>ショー・エンターテインメント</h2>
 
-      <p>ディズニークルーズの真髄はやっぱりエンターテインメント！毎晩メインシアターでブロードウェイクオリティのショーが上演されるんですが、これが本当に素晴らしかった。</p>
+      <div class="photo-placeholder-box">
+        <div class="icon">🎭</div>
+        <p>ショーの写真（Xの投稿URLを追加してください）</p>
+      </div>
+
+      <p>ディズニークルーズの真髄はエンターテインメント！毎晩メインシアターでブロードウェイクオリティのショーが上演されるんですが、これが本当に素晴らしかった。</p>
 
       <div class="highlight-box">
         <h4>✦ 乗船中に楽しんだエンタメ</h4>
         <ul>
-          <li>ミュージカルショー「アラジン」（感動して泣いた）</li>
-          <li>デッキパーティー「ピクサーナイト」</li>
-          <li>キャラクターミートアンドグリート（ミッキー・ミニー）</li>
+          <li>メインシアターでのミュージカルショー</li>
+          <li>デッキパーティー</li>
+          <li>キャラクターミートアンドグリート</li>
           <li>プールサイドの映画上映（星空の下で最高）</li>
           <li>スパ・フィットネスセンター完備</li>
         </ul>
       </div>
 
       <h2>お食事</h2>
-      <p>ディズニークルーズのダイニングは<strong>「ロテーションダイニング」</strong>という仕組みで、毎晩違うレストランに行けるシステム。担当ウェイターさんも一緒に移動してくれるから、毎回初めましての緊張感なく過ごせます。</p>
 
-      <p>松子が特に気に入ったのはアニメキャラクターをテーマにしたレストラン「アニメーターズ・パレット」。食事中にディズニーキャラクターのアニメーションが壁に映し出されて、大人でも完全に童心に返りました笑。</p>
+      <div class="photo-placeholder-box">
+        <div class="icon">🍽️</div>
+        <p>食事の写真（Xの投稿URLを追加してください）</p>
+      </div>
 
-      <h3>大人向けレストランも充実</h3>
-      <p>ディズニークルーズは子供向けというイメージがあるけど、大人専用レストランも充実。特に<strong>ファインダイニング「ロナポア」</strong>は予約必須の人気レストランで、コースが最高でした。追加料金はかかるけど絶対おすすめ！</p>
+      <p>ディズニークルーズのダイニングは<strong>「ロテーションダイニング」</strong>という仕組みで、毎晩違うレストランへ。担当ウェイターさんも一緒に移動してくれるから、毎回初めましての緊張感なく過ごせます。</p>
 
-      <h2>寄港地・観光</h2>
-      <p>今回の航路はシンガポール発着でタイ・プーケットとマレーシア・ペナン島に寄港。各寄港地では半日〜1日フリータイムで、オプションツアーに参加するもよし、自由散策するもよし。</p>
+      <h2>寄港地について</h2>
 
-      <p>プーケットでは<strong>エレファントサンクチュアリ</strong>に行ってきたんですが（象を救う施設で象と触れ合えるやつ）、これが旅のハイライトになるくらい最高の体験でした。ディズニーのクルーズがあればこそ来られた場所だと思うと感慨深い。</p>
+      <div class="photo-placeholder-box">
+        <div class="icon">🏝️</div>
+        <p>寄港地の写真（Xの投稿URLを追加してください）</p>
+      </div>
+
+      <p>寄港地ではオプションツアーに参加するもよし、自由散策するもよし。各地のリアルな体験はXの投稿で随時更新しています！</p>
+
+      <div class="tweet-embed-box">
+        <blockquote class="twitter-tweet" data-lang="ja" data-theme="light">
+          <a href="https://x.com/tabiwoaisuru"></a>
+        </blockquote>
+      </div>
 
       <div class="rating-box">
         <h4>松子の総合評価</h4>
@@ -209,9 +218,9 @@ footer a{color:rgba(255,255,255,0.4)}
           <span class="rating-score">5.0</span>
         </div>
         <div class="rating-row">
-          <span class="rating-label">お食事</span>
-          <div class="rating-bar"><div class="rating-fill" style="width:90%"></div></div>
-          <span class="rating-score">4.5</span>
+          <span class="rating-label">キャストのサービス</span>
+          <div class="rating-bar"><div class="rating-fill" style="width:98%"></div></div>
+          <span class="rating-score">4.9</span>
         </div>
         <div class="rating-row">
           <span class="rating-label">客室・施設</span>
@@ -219,33 +228,26 @@ footer a{color:rgba(255,255,255,0.4)}
           <span class="rating-score">4.6</span>
         </div>
         <div class="rating-row">
-          <span class="rating-label">キャストのサービス</span>
-          <div class="rating-bar"><div class="rating-fill" style="width:98%"></div></div>
-          <span class="rating-score">4.9</span>
-        </div>
-        <div class="rating-row">
-          <span class="rating-label">コスパ</span>
-          <div class="rating-bar"><div class="rating-fill" style="width:80%"></div></div>
-          <span class="rating-score">4.0</span>
+          <span class="rating-label">お食事</span>
+          <div class="rating-bar"><div class="rating-fill" style="width:90%"></div></div>
+          <span class="rating-score">4.5</span>
         </div>
       </div>
 
-      <h2>まとめ・松子の本音</h2>
-      <p>ディズニークルーズ、<strong>最高すぎて一言で言えない</strong>笑！正直、値段は高いです（コンシェルジュは特に）。でも「一生に一度は乗る価値がある」と断言できる体験でした。</p>
-
-      <p>大人だけのカップル旅でも、家族旅行でも、絶対楽しめます。むしろ松子は大人だけで乗った方が、バーやラウンジをフル活用できて最高だと思う！また絶対乗りたい🩷🩷🩷</p>
+      <h2>まとめ</h2>
+      <p>ディズニークルーズ、<strong>最高すぎて一言で言えない</strong>笑！正直、値段は高いです。でも「一生に一度は乗る価値がある」と断言できる体験でした。また絶対乗りたい🩷🩷🩷</p>
 
       <div class="aff-card">
-        <div class="aff-card-head"><span>✈️ Expediaでシンガポール航空券＋ホテルを予約</span></div>
+        <div class="aff-card-head"><span>✈️ Expediaでクルーズ出発地の航空券＋ホテルを予約</span></div>
         <div class="aff-card-body">
-          <p>ディズニークルーズの前後泊は松子的必須。シンガポールのホテル＋航空券をExpediaでパッケージ予約するとお得。出発前後に観光も楽しもう！</p>
-          <a href="#" class="btn-aff btn-expedia">Expediaでシンガポールを検索 →</a>
+          <p>ディズニークルーズの前後泊はExpediaでパッケージ予約がお得。フライト＋ホテルのセット割引を活用しよう！</p>
+          <a href="#" class="btn-aff btn-expedia">Expediaで検索する →</a>
           <p class="placeholder-note">※ アフィリエイトリンク登録後に差し替え予定</p>
         </div>
       </div>
 
       <div class="aff-disclaimer">
-        ⚠️ 本サイトは一休.com・Expediaほか各社アフィリエイトプログラムに参加しており、リンク経由での予約により報酬を受け取る場合があります。記事内の情報は執筆時点のものです。
+        ⚠️ 本サイトは一休.com・Expediaほか各社アフィリエイトプログラムに参加しており、リンク経由での予約により報酬を受け取る場合があります。
       </div>
     </article>
 
@@ -284,15 +286,13 @@ footer a{color:rgba(255,255,255,0.4)}
       <div class="widget">
         <div class="widget-head">📖 関連記事</div>
         <div class="widget-body">
-          <div style="display:flex;flex-direction:column;gap:.875rem">
-            <a href="chuzenji-suite.html" style="display:flex;gap:.75rem;align-items:flex-start">
-              <div style="width:50px;height:50px;border-radius:8px;flex-shrink:0;background:linear-gradient(135deg,#0d1f3c,#1a3a5c,#4a9ab0)"></div>
-              <div>
-                <div style="font-size:13px;font-weight:600;color:var(--c1);line-height:1.4">中禅寺湖スイートに泊まってきた！</div>
-                <div style="font-size:11px;color:var(--tm);margin-top:3px">国内 · 2025年11月</div>
-              </div>
-            </a>
-          </div>
+          <a href="singapore.html" style="display:flex;gap:.75rem;align-items:flex-start">
+            <div style="width:50px;height:50px;border-radius:8px;flex-shrink:0;background:linear-gradient(135deg,#0a2010,#1a6b3a,#4fc97a)"></div>
+            <div>
+              <div style="font-size:13px;font-weight:600;color:var(--c1);line-height:1.4">シンガポール観光、港区OLが行くべきスポット</div>
+              <div style="font-size:11px;color:var(--tm);margin-top:3px">海外 · シンガポール</div>
+            </div>
+          </a>
         </div>
       </div>
     </aside>
@@ -302,7 +302,7 @@ footer a{color:rgba(255,255,255,0.4)}
 <footer>
   <p class="footer-title">港区在住外資系キャリアウーマン松子のぶらり世界旅</p>
   <p>国内・海外の旅行記とお得な予約情報をお届け</p>
-  <p style="margin-top:1rem;font-size:11px"><a href="#">プライバシーポリシー</a> · <a href="#">お問い合わせ</a> · <a href="index.html">トップへ戻る</a></p>
+  <p style="margin-top:1rem;font-size:11px"><a href="#">プライバシーポリシー</a> · <a href="index.html">トップへ戻る</a></p>
 </footer>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
