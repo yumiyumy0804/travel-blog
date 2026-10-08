@@ -8,10 +8,10 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --c1:#d8f7ea;--c2:#a9eccf;
+  --c1:#a8ecd2;--c2:#6fdcb2;
   --acc:#e8709a;--acc2:#f4a3c0;--acc3:#fbd0df;
   --rose:#d94f86;--roseli:#f7c5d8;
-  --bg:#f3faf6;--s1:#ffffff;--t1:#0b4a38;--t2:#4a665b;--tm:#8fa89c;
+  --bg:#eaf7f1;--s1:#ffffff;--t1:#083e2e;--t2:#4a665b;--tm:#8fa89c;
   --r:10px;
   --gold:linear-gradient(135deg,#d94f86,#f08cb0,#d94f86);
 }
@@ -22,10 +22,10 @@ img{max-width:100%;display:block}
 
 /* Header */
 header{background:var(--c1);padding:0 1.5rem;position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;height:60px;border-bottom:1px solid rgba(16,185,129,0.35)}
-.logo{color:#0b4a38;font-size:15px;font-weight:700;letter-spacing:.04em;line-height:1.3}
+.logo{color:#083e2e;font-size:15px;font-weight:700;letter-spacing:.04em;line-height:1.3}
 .logo span{background:var(--gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 nav{display:flex;gap:1.5rem}
-nav a{color:rgba(11,74,56,0.78);font-size:13px;transition:color .2s;letter-spacing:.04em}
+nav a{color:rgba(8,62,46,0.85);font-size:13px;transition:color .2s;letter-spacing:.04em}
 nav a:hover{color:#d94f86}
 
 /* Hero */
@@ -33,7 +33,7 @@ nav a:hover{color:#d94f86}
 .hero-bg{position:absolute;inset:0}
 .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 60%;display:block}
 .hero-sparkle{position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%,rgba(16,185,129,0.22) 0%,transparent 50%),radial-gradient(circle at 80% 70%,rgba(5,150,105,0.18) 0%,transparent 50%),radial-gradient(circle at 50% 10%,rgba(232,112,154,0.1) 0%,transparent 40%)}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(6,95,70,0.30) 0%,rgba(6,95,70,0.40) 60%,rgba(4,70,52,0.55) 100%)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(6,95,70,0.38) 0%,rgba(6,95,70,0.48) 60%,rgba(4,70,52,0.55) 100%)}
 .hero-content{position:relative;z-index:1;color:#fff;padding:0 1.5rem;max-width:680px}
 .hero-eyebrow{font-size:12px;letter-spacing:.2em;color:var(--acc2);margin-bottom:.875rem;opacity:.9;text-transform:uppercase}
 .hero-content h1{font-size:clamp(20px,4vw,36px);font-weight:700;line-height:1.35;margin-bottom:1.125rem;text-shadow:0 2px 20px rgba(0,0,0,0.4)}
@@ -47,7 +47,7 @@ nav a:hover{color:#d94f86}
 .gold-strip{height:3px;background:linear-gradient(90deg,transparent,#e8709a,#fbd0df,#e8709a,transparent)}
 
 /* Affiliate Banner */
-.aff-strip{background:#e9fbf3;padding:1rem 1.5rem;display:flex;gap:1rem;overflow-x:auto;scrollbar-width:none;align-items:center;border-bottom:1px solid rgba(16,185,129,0.2)}
+.aff-strip{background:#cdf4e3;padding:1rem 1.5rem;display:flex;gap:1rem;overflow-x:auto;scrollbar-width:none;align-items:center;border-bottom:1px solid rgba(16,185,129,0.2)}
 .aff-strip::-webkit-scrollbar{display:none}
 .aff-btn{flex-shrink:0;padding:10px 20px;border-radius:30px;font-size:13px;font-weight:600;cursor:pointer;border:none;transition:opacity .2s,transform .15s;display:inline-flex;align-items:center;gap:8px;letter-spacing:.03em}
 .aff-btn:hover{opacity:.88;transform:translateY(-1px)}
@@ -72,11 +72,11 @@ nav a:hover{color:#d94f86}
 .card{border-radius:14px;overflow:hidden;background:var(--s1);border:0.5px solid rgba(232,112,154,0.2);transition:transform .2s,box-shadow .2s;cursor:pointer}
 .card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(5,59,46,0.12)}
 .card-img{height:200px;position:relative;display:flex;align-items:flex-end;padding:1rem}
-.card-img.g1{background:linear-gradient(135deg,#5fd8ae,#3ccb9a,#d94f86)}
-.card-img.g2{background:linear-gradient(135deg,#7fe3c0,#3ccb9a,#e8709a)}
-.card-img.g3{background:linear-gradient(135deg,#7fe3c0,#3ccb9a,#4fc97a)}
+.card-img.g1{background:linear-gradient(135deg,#2fbf8e,#14a577,#d94f86)}
+.card-img.g2{background:linear-gradient(135deg,#4fd1a1,#14a577,#e8709a)}
+.card-img.g3{background:linear-gradient(135deg,#4fd1a1,#14a577,#4fc97a)}
 .card-img.g4{background:linear-gradient(135deg,#f6b3cc,#ee86ad,#e8709a)}
-.card-img.g5{background:linear-gradient(135deg,#5fd8ae,#3ccb9a,#2fbf8e)}
+.card-img.g5{background:linear-gradient(135deg,#2fbf8e,#14a577,#0b9066)}
 .card-tag{display:inline-block;background:rgba(255,255,255,0.18);backdrop-filter:blur(8px);color:#fff;font-size:11px;padding:4px 12px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.3);letter-spacing:.05em}
 .card-body{padding:1.125rem 1.25rem 1.375rem}
 .card-body h3{font-size:15px;font-weight:700;line-height:1.5;margin-bottom:.5rem;color:var(--t1)}
@@ -86,7 +86,7 @@ nav a:hover{color:#d94f86}
 /* Matsuko Profile */
 .profile-banner{background:linear-gradient(135deg,var(--c1),var(--c2));border-radius:16px;padding:1.5rem;display:flex;gap:1.25rem;align-items:center;margin-bottom:2rem;border:1px solid rgba(232,112,154,0.25);box-shadow:0 4px 24px rgba(5,59,46,0.12)}
 .profile-avatar{width:72px;height:72px;border-radius:50%;flex-shrink:0;overflow:hidden;border:2px solid rgba(232,112,154,0.5);box-shadow:0 0 0 1px rgba(232,112,154,0.2)}
-.profile-text{color:#0b4a38}
+.profile-text{color:#083e2e}
 .profile-text h3{font-size:16px;font-weight:700;margin-bottom:.25rem;background:var(--gold);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .profile-text p{font-size:13px;opacity:.75;line-height:1.6}
 
@@ -107,9 +107,9 @@ nav a:hover{color:#d94f86}
 .article-row{display:flex;gap:0;background:var(--s1);border-radius:14px;overflow:hidden;border:0.5px solid rgba(232,112,154,0.18);transition:box-shadow .2s,transform .2s;cursor:pointer}
 .article-row:hover{box-shadow:0 6px 24px rgba(5,59,46,0.1);transform:translateY(-2px)}
 .article-row-img{width:110px;flex-shrink:0}
-.article-row-img.g1{background:linear-gradient(160deg,#5fd8ae,#d94f86)}
-.article-row-img.g2{background:linear-gradient(160deg,#7fe3c0,#e8709a)}
-.article-row-img.g3{background:linear-gradient(160deg,#7fe3c0,#4fc97a)}
+.article-row-img.g1{background:linear-gradient(160deg,#2fbf8e,#d94f86)}
+.article-row-img.g2{background:linear-gradient(160deg,#4fd1a1,#e8709a)}
+.article-row-img.g3{background:linear-gradient(160deg,#4fd1a1,#4fc97a)}
 .article-row-body{padding:.875rem 1.125rem;flex:1}
 .article-row-body h3{font-size:14px;font-weight:700;line-height:1.5;margin-bottom:.375rem;color:var(--t1)}
 .article-row-body p{font-size:12px;color:var(--t2);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
@@ -139,12 +139,12 @@ nav a:hover{color:#d94f86}
 .dest-card{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:4/3;cursor:pointer;transition:transform .2s,box-shadow .2s}
 .dest-card:hover{transform:scale(1.03);box-shadow:0 12px 32px rgba(5,59,46,0.2)}
 .dest-card-bg{position:absolute;inset:0}
-.dest-card-bg.d1{background:linear-gradient(160deg,#7fe3c0,#5fd8ae,#3ccb9a)}
+.dest-card-bg.d1{background:linear-gradient(160deg,#4fd1a1,#2fbf8e,#14a577)}
 .dest-card-bg.d2{background:linear-gradient(160deg,#f6b3cc,#ee86ad,#d94f86)}
-.dest-card-bg.d3{background:linear-gradient(160deg,#7fe3c0,#4cd4a5,#e8709a)}
-.dest-card-bg.d4{background:linear-gradient(160deg,#7fe3c0,#4cd4a5,#4fc97a)}
-.dest-card-bg.d5{background:linear-gradient(160deg,#7fe3c0,#4cd4a5,#d94f86)}
-.dest-card-bg.d6{background:linear-gradient(160deg,#7fe3c0,#4cd4a5,#e8709a)}
+.dest-card-bg.d3{background:linear-gradient(160deg,#4fd1a1,#22b385,#e8709a)}
+.dest-card-bg.d4{background:linear-gradient(160deg,#4fd1a1,#22b385,#4fc97a)}
+.dest-card-bg.d5{background:linear-gradient(160deg,#4fd1a1,#22b385,#d94f86)}
+.dest-card-bg.d6{background:linear-gradient(160deg,#4fd1a1,#22b385,#e8709a)}
 .dest-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(6,95,70,0.7) 0%,transparent 60%)}
 .dest-label{position:absolute;bottom:0;left:0;right:0;padding:1.125rem}
 .dest-label strong{font-size:17px;display:block;color:#fff;font-weight:700;text-shadow:0 1px 8px rgba(0,0,0,0.5)}
@@ -262,7 +262,7 @@ footer a:hover{color:#d94f86}
       <div class="sec-head" style="margin-top:2rem"><h2>最新の旅行記</h2></div>
       <div class="articles-list">
         <a href="kobe-trip.html" class="article-row">
-          <div class="article-row-img" style="background:linear-gradient(160deg,#7fe3c0,#4cd4a5,#5fd8ae)">
+          <div class="article-row-img" style="background:linear-gradient(160deg,#4fd1a1,#22b385,#2fbf8e)">
             <img src="https://pbs.twimg.com/media/HTq2_k7a8AAJkNk?format=jpg&name=small" alt="神戸シェラトン" style="width:100%;height:100%;object-fit:cover" loading="lazy">
           </div>
           <div class="article-row-body">
