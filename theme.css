@@ -134,7 +134,7 @@ footer a:hover{color:#f7c9d0}
 
 /* ---------- Article pages ---------- */
 .article-hero{height:min(62vh,520px);min-height:380px;padding:0 2rem 3rem}
-.article-hero-bg{background-color:#cfe5dc}
+.article-hero-bg{background:linear-gradient(135deg,#6fae9c,#d9a0a8);background-size:cover;background-position:center}
 .article-hero-sparkle{display:none}
 .article-hero-overlay{background:linear-gradient(to top,rgba(8,34,28,.75) 0%,rgba(8,34,28,.35) 45%,transparent 100%)}
 .article-hero-content h1,.article-eyebrow,.article-meta{text-shadow:0 2px 14px rgba(0,30,24,.55)}
